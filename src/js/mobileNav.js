@@ -4,6 +4,6 @@ const navcontainer = document.querySelector('.nav');
 
 // burger nav logic
 
-mobileNavcontainer.addEventListener('click', () => {
- header.classList.toggle('navActive');
+mobileNavcontainer?.addEventListener('click', () => {
+	header.classList.toggle('navActive');
 });

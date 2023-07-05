@@ -48,11 +48,11 @@ div.primary__btn__product-showcase {
 div.primary__btn:hover,
 div.primary__btn__product-showcase:hover {
   background-color: #312d51;
-  box-shadow: 0px 5px 10px 1px #9e9c9c;
+  box-shadow: 0px 5px 10px 1px rgb(158, 156, 156);
 }
 div.primary__btn:active,
 div.primary__btn__product-showcase:active {
-  box-shadow: 0px 1px 1px 1px #9e9c9c;
+  box-shadow: 0px 1px 1px 1px rgb(158, 156, 156);
 }
 
 h1:not(.hero-banner-content__header) {
@@ -83,11 +83,11 @@ h1:not(.hero-banner-content__header) {
 .chevron-container i.fas.fa-chevron-right:hover,
 .chevron-container-popular i.fas.fa-chevron-left:hover,
 .chevron-container-popular i.fas.fa-chevron-right:hover {
-  background-color: #272727;
+  background-color: rgb(39, 39, 39);
 }
 
 .chevronActive {
-  background-color: #272727;
+  background-color: rgb(39, 39, 39);
 }
 
 .header {
@@ -177,7 +177,7 @@ h1:not(.hero-banner-content__header) {
 }
 
 .searchbarActive div.header-icon-searchbar {
-  border: 1px solid #a8a8a8;
+  border: 1px solid rgb(168, 168, 168);
   background: white;
   box-shadow: inset 0px 1px 2px 1px #4c649d;
 }
@@ -233,7 +233,7 @@ h1:not(.hero-banner-content__header) {
 .nav-mobile:hover {
   opacity: 1;
   background-color: #b2b1c0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .nav-mobile i.fas.fa-bars {
   font-size: 1.4rem;
@@ -248,7 +248,7 @@ h1:not(.hero-banner-content__header) {
 .navStick {
   position: fixed;
   width: 100%;
-  background: #f3eeebf8;
+  background: rgba(243, 238, 235, 0.9725490196);
   height: 10vh;
   z-index: 2;
 }
@@ -279,7 +279,7 @@ h1:not(.hero-banner-content__header) {
 .hero-banner-content__mini-borderline {
   width: 3em;
   display: inline-block;
-  border-bottom: 1px solid #adadad;
+  border-bottom: 1px solid rgb(173, 173, 173);
 }
 .hero-banner-content__header {
   padding: 0.2em 0;
@@ -298,7 +298,7 @@ h1:not(.hero-banner-content__header) {
 .hero-banner-content_price {
   font-size: 1.4rem;
   font-weight: bold;
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid rgb(165, 165, 165);
   width: 6em;
   display: inline-block;
   padding: 0.8em 0;
@@ -691,27 +691,27 @@ h1:not(.hero-banner-content__header) {
   border-radius: 50%;
 }
 .testimonial-card-img.dinesh {
-  background: url("/dinesh.c05192bf.png") center;
+  background: url("../img/Testimonial/dinesh.png") center;
   background-size: cover;
 }
 .testimonial-card-img.erlich {
-  background: url("/erlich.a7511714.jpg") center;
+  background: url("../img/Testimonial/erlich.jpg") center;
   background-size: cover;
 }
 .testimonial-card-img.jinyang {
-  background: url("/jinyang.fcaece06.png") center;
+  background: url("../img/Testimonial/jinyang.png") center;
   background-size: contain;
 }
 .testimonial-card-img.monica {
-  background: url("/monica.f3fdd9a1.jpg") top;
+  background: url("../img/Testimonial/monica.jpg") top;
   background-size: cover;
 }
 .testimonial-card-img.jill {
-  background: url("/jilfoyle.b3873355.jpg") top;
+  background: url("../img/Testimonial/jilfoyle.jpg") top;
   background-size: cover;
 }
 .testimonial-card-img.richard {
-  background: url("/richard.30ad56a5.jpg") top;
+  background: url("../img/Testimonial/richard.jpg") top;
   background-size: cover;
 }
 .testimonial-card-img-stars {
@@ -823,7 +823,7 @@ h1:not(.hero-banner-content__header) {
 @media screen and (max-width: 1000px) {
   .header .nav {
     position: absolute !important;
-    background: #dfdeeef8;
+    background: rgba(223, 222, 238, 0.9725490196);
     left: -100vw;
     width: 50%;
     height: 100vh;
@@ -840,7 +840,7 @@ h1:not(.hero-banner-content__header) {
     background-color: #635d9e;
     box-shadow: 0 2px 1px 1px rgba(134, 134, 134, 0.527);
     border-bottom: none !important;
-    color: #e6e3e3;
+    color: rgb(230, 227, 227);
   }
   .header .navlist {
     flex-direction: column;
@@ -1291,14 +1291,14 @@ h1:not(.hero-banner-content__header) {
 }
 @media screen and (max-width: 1388px) {
   .testimonial i.fas.fa-chevron-right,
-.testimonial i.fas.fa-chevron-left {
-    background-color: #666666;
+  .testimonial i.fas.fa-chevron-left {
+    background-color: rgb(102, 102, 102);
     position: absolute;
   }
 }
 @media screen and (max-width: 1388px) and (max-width: 680px) {
   .testimonial i.fas.fa-chevron-right,
-.testimonial i.fas.fa-chevron-left {
+  .testimonial i.fas.fa-chevron-left {
     margin: 0 3em;
     font-size: 1.2rem;
     padding: 0.8em 1em;
@@ -1306,7 +1306,7 @@ h1:not(.hero-banner-content__header) {
 }
 @media screen and (max-width: 1388px) and (max-width: 480px) {
   .testimonial i.fas.fa-chevron-right,
-.testimonial i.fas.fa-chevron-left {
+  .testimonial i.fas.fa-chevron-left {
     margin: 0 2em;
     font-size: 1.2rem;
     padding: 0.8em 1em;
@@ -1314,7 +1314,7 @@ h1:not(.hero-banner-content__header) {
 }
 @media screen and (max-width: 1388px) and (max-width: 380px) {
   .testimonial i.fas.fa-chevron-right,
-.testimonial i.fas.fa-chevron-left {
+  .testimonial i.fas.fa-chevron-left {
     margin: 0 1.5em;
     font-size: 1.2rem;
     padding: 0.8em 1em;
@@ -1427,6 +1427,4 @@ h1:not(.hero-banner-content__header) {
   .footer-copyright {
     font-size: 3vw;
   }
-}
-
-/*# sourceMappingURL=/main.2026268b.css.map */
+}/*# sourceMappingURL=main.css.map */
