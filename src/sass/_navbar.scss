@@ -27,18 +27,25 @@
 		top: 0;
 		transition: all 0.4s ease-in-out;
 		z-index: 1;
+
 		.navlists {
 			@include flex;
 			flex-direction: column;
 			justify-content: space-around;
 			font-weight: 400;
+			@include borderTest;
+			position: absolute;
+			top: 5rem;
+			width: 100%;
 			&-list {
 				margin: 0.6rem 0;
 				@include fontSizes.font-xl;
-				@include borderTest;
+				// @include borderTest;
 				width: 100%;
 				text-align: center;
 				padding: 0.6rem 0;
+				// position: absolute;
+				// top: 2rem;
 				> a {
 					// padding: 0.5em 0;
 					// opacity: 0.7;
@@ -160,6 +167,13 @@
 			@media screen and (max-width: 680px) {
 				width: 40vw;
 			}
+		}
+
+		&-mobile {
+			@include borderTest;
+			position: absolute;
+			bottom: 4rem;
+			width: 100%;
 		}
 	}
 }
