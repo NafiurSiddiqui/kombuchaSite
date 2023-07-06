@@ -1,18 +1,17 @@
+@use './helper-fontSizes' as fontSizes;
+// @use './helper';
+
 .header {
-	@include flex;
-	justify-content: center;
-	padding: 1em 1em;
+	// @include helper.flexFunc(row, space-between, center);
+	@include flexFunc(row, space-between, center);
+	// justify-content: center;
+	padding: 0.8rem;
 	height: 8vh;
 	@include transition(0.5s);
-	/** 
- on scroll - activate 👇 this 
- */
-	//  position: fixed;
-	//  width: 100%;
-	//  background-color: rgba(245, 244, 237, 0.952);
+
 	div.logo {
-		position: absolute;
-		left: 2em;
+		// position: absolute;
+		// left: 2em;
 		> span.logo-text {
 			font-size: 1.2rem;
 			font-weight: bold;
@@ -20,7 +19,7 @@
 	}
 
 	.nav {
-		position: fixed !important;
+		position: fixed;
 		background: #dfdeeef8;
 		width: 100vw;
 		left: -100vw;
@@ -34,17 +33,48 @@
 			justify-content: space-around;
 			font-weight: 400;
 			&-list {
-				margin: 0.8rem 0;
+				margin: 0.6rem 0;
+				@include fontSizes.font-xl;
+				@include borderTest;
+				width: 100%;
+				text-align: center;
+				padding: 0.6rem 0;
 				> a {
-					padding: 0.5em 0;
-					opacity: 0.7;
+					// padding: 0.5em 0;
+					// opacity: 0.7;
 					transition: all 0.2s ease-in-out;
-					margin: 0.6em 0;
+					// margin: 0.6em 0;
 				}
-				> a:hover {
-					border-bottom: 2px solid $primaryColor;
-					opacity: 0.9;
-				}
+				// > a:hover {
+				// 	border-bottom: 2px solid $primaryColor;
+				// }
+			}
+		}
+
+		&-mobile-btn {
+			// display: none;
+			// position: absolute;
+			// left: 2em;
+			padding: 0.4em;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+			// background-color: #e0dfec;
+			border-radius: 2px;
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+				background-color: #b2b1c0;
+				color: rgb(255, 255, 255);
+			}
+			& i.fas.fa-bars {
+				font-size: 1.4rem;
+			}
+
+			& i.fa.fa-close {
+				display: none;
+				font-size: 1.5rem;
+				position: relative;
+				left: -0em;
 			}
 		}
 
@@ -69,7 +99,7 @@
 		// }
 
 		.nav-mobile {
-			// display: inline-block;
+			display: inline-block;
 		}
 
 		// div.logo {
@@ -181,35 +211,9 @@
 		display: inline-block !important;
 	}
 	.nav {
-		display: block !important;
-		left: 0 !important;
-	}
-}
+		// display: block !important;
 
-.nav-mobile {
-	display: none;
-	position: absolute;
-	left: 2em;
-	padding: 0.4em;
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-	background-color: #e0dfec;
-	border-radius: 2px;
-	opacity: 0.8;
-	&:hover {
-		opacity: 1;
-		background-color: #b2b1c0;
-		color: rgb(255, 255, 255);
-	}
-	& i.fas.fa-bars {
-		font-size: 1.4rem;
-	}
-
-	& i.fa.fa-close {
-		display: none;
-		font-size: 1.5rem;
-		position: relative;
-		left: -0em;
+		left: 0;
 	}
 }
 

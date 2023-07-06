@@ -17,6 +17,14 @@ $fontColor: #3d3d3d;
 	align-items: center;
 }
 
+@mixin flexFunc($dir, $jc, $ai) {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: $dir;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
 @mixin primaryColor {
 	color: #ff5331;
 }
