@@ -3,59 +3,63 @@ $peachColor: #b77b28;
 $secondaryColor: #545268;
 $fontColor: #3d3d3d;
 
+.borderTest {
+	border: 1px solid darkcyan;
+}
+
 @mixin borderTest {
- border: 1px solid darkcyan;
+	border: 1px solid darkcyan;
 }
 
 @mixin flex {
- display: flex;
- display: -webkit-flex;
- align-items: center;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
 }
 
 @mixin primaryColor {
- color: #ff5331;
+	color: #ff5331;
 }
 
 @mixin secondaryColor {
- color: #545268;
+	color: #545268;
 }
 
 @mixin tertiaryBGColor {
- background-color: #f7f7f7;
+	background-color: #f7f7f7;
 }
 
 @mixin miniBorderline {
- display: inline-block;
- border-bottom: 1px solid rgb(173, 173, 173);
+	display: inline-block;
+	border-bottom: 1px solid rgb(173, 173, 173);
 }
 
 @mixin fontLato {
- font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 @mixin fontQuicksand {
- font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 @mixin fontKodchasan {
- font-family: 'Kodchasan', sans-serif;
+	font-family: 'Kodchasan', sans-serif;
 }
 
 @mixin cardShadow {
- box-shadow: 0px 8px 24px 1px #d9d8d8;
- &:hover {
-  box-shadow: 0px 8px 10px 1px #d9d8d8;
-  @media screen and (max-width: 1390px) {
-   box-shadow: 0px 4px 6px 1px #d9d8d8;
-  }
- }
+	box-shadow: 0px 8px 24px 1px #d9d8d8;
+	&:hover {
+		box-shadow: 0px 8px 10px 1px #d9d8d8;
+		@media screen and (max-width: 1390px) {
+			box-shadow: 0px 4px 6px 1px #d9d8d8;
+		}
+	}
 }
 
 @mixin testimonialBtnBG {
- background-color: rgb(102, 102, 102);
+	background-color: rgb(102, 102, 102);
 }
 
 @mixin transition($time) {
- transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
 }
