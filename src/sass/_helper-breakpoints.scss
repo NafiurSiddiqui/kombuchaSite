@@ -1,0 +1,29 @@
+$breakpoints: (
+	'small-ios': 320px,
+	'medium-ios': 375px,
+	'large-ios': 414px,
+	'small-tablet': 600px,
+	'large-tablet': 768px,
+	'desktop': 1024px,
+	'large-desktop': 1440px,
+);
+
+@function breakpoint($name) {
+	@return map-get($breakpoints, $name);
+}
+
+@function above-breakpoint($name) {
+	$breakpoint: breakpoint($name);
+	@return '(min-width: #{$breakpoint})';
+}
+
+@function below-breakpoint($name) {
+	$breakpoint: breakpoint($name);
+	@return '(max-width: #{($breakpoint - 1)})';
+}
+
+@function between-breakpoints($name1, $name2) {
+	$breakpoint1: breakpoint($name1);
+	$breakpoint2: breakpoint($name2);
+	@return '(min-width: #{min($breakpoint1, $breakpoint2)}) and (max-width: #{max($breakpoint1, $breakpoint2) - 1})';
+}
