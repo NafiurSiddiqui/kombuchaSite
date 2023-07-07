@@ -2,6 +2,7 @@ $primaryColor: #ff5331;
 $peachColor: #b77b28;
 $secondaryColor: #545268;
 $fontColor: #3d3d3d;
+$mobileNavBg: rgb(249 244 231);
 
 .borderTest {
 	border: 1px solid darkcyan;
@@ -68,6 +69,6 @@ $fontColor: #3d3d3d;
 	background-color: rgb(102, 102, 102);
 }
 
-@mixin transition($time) {
-	transition: all $time ease-in-out;
+@mixin transition($duration) {
+	transition: all $duration ease-in-out;
 }

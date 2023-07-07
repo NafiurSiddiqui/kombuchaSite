@@ -1,17 +1,12 @@
 @use './helper-fontSizes' as fontSizes;
-// @use './helper';
 
 .header {
-	// @include helper.flexFunc(row, space-between, center);
 	@include flexFunc(row, space-between, center);
-	// justify-content: center;
 	padding: 0.8rem;
 	height: 8vh;
 	@include transition(0.5s);
 
 	div.logo {
-		// position: absolute;
-		// left: 2em;
 		> span.logo-text {
 			font-size: 1.2rem;
 			font-weight: bold;
@@ -20,61 +15,81 @@
 
 	.nav {
 		position: fixed;
-		background: #dfdeeef8;
+		background-color: rgb(236, 234, 230);
 		width: 100vw;
 		left: -100vw;
 		height: 100vh;
 		top: 0;
 		transition: all 0.4s ease-in-out;
-		z-index: 1;
+		z-index: 10;
 
 		.navlists {
 			@include flex;
 			flex-direction: column;
 			justify-content: space-around;
 			font-weight: 400;
-			// @include borderTest;
 			position: absolute;
-			// top: 5rem;
 			width: 100%;
+			padding: 0.6rem;
 			&-list {
-				margin: 0.6rem 0;
-				@include fontSizes.font-xl;
-				// @include borderTest;
+				margin: 0.3rem 0;
+				@include fontSizes.xl;
+				font-size: 1.5rem;
 				width: 100%;
 				text-align: center;
-				padding: 0.6rem 0;
-				// position: absolute;
-				// top: 2rem;
+
 				> a {
-					// padding: 0.5em 0;
-					// opacity: 0.7;
 					transition: all 0.2s ease-in-out;
-					// margin: 0.6em 0;
+					width: 100%;
+					display: inline-block;
+					padding: 0.7rem 0.6rem;
+					border-radius: 0.2rem;
 				}
-				// > a:hover {
-				// 	border-bottom: 2px solid $primaryColor;
-				// }
+
+				> a:active {
+					background-color: $primaryColor;
+					color: white;
+				}
 			}
 		}
 
 		&-mobile-btn {
-			// display: none;
-			// position: absolute;
-			// left: 2em;
 			padding: 0.4em;
 			cursor: pointer;
 			transition: all 0.2s ease-in-out;
 			// background-color: #e0dfec;
 			border-radius: 2px;
 			opacity: 0.8;
-			&:hover {
-				opacity: 1;
-				background-color: #b2b1c0;
-				color: rgb(255, 255, 255);
+			z-index: 20;
+
+			> button {
+				border: none;
+				background-color: transparent;
+				@include flex;
+				@include transition(600);
+
+				> i {
+					@include fontSizes.lg;
+					@include transition(600);
+				}
+
+				&:active {
+					i {
+						color: white;
+					}
+				}
+			}
+			// &:hover {
+			// 	opacity: 1;
+			// 	background-color: #b2b1c0;
+			// 	color: rgb(255, 255, 255);
+			// }
+
+			&:active {
+				background-color: $secondaryColor;
 			}
 			& i.fas.fa-bars {
-				font-size: 1.4rem;
+				@include fontSizes.xl2;
 			}
 
 			& i.fa.fa-close {
@@ -84,53 +99,13 @@
 				left: -0em;
 			}
 		}
-
-		// ul > a {
-		// 	width: 80% !important;
-		// 	text-align: center;
-		// 	border-radius: 8px;
-
-		// 	&:hover {
-		// 		background-color: #635d9e;
-		// 		box-shadow: 0 2px 1px 1px rgba(134, 134, 134, 0.527);
-		// 		border-bottom: none !important;
-		// 		color: rgb(230, 227, 227);
-		// 	}
-		// }
-
-		// .navlist {
-		// 	flex-direction: column;
-		// 	position: relative;
-		// 	top: 11%;
-		// 	font-size: 3vw;
-		// }
-
-		.nav-mobile {
-			display: inline-block;
-		}
-
-		// div.logo {
-		// 	left: 6em;
-		// }
-
-		// width: 100vw;
-
-		// &-icon {
-		// 	& > img {
-		// 		width: 1.7em;
-		// 		margin: 0 0.4em;
-		// 	}
-		// }
 	}
 
 	&-actions {
-		// @include flex;
 		display: none;
 		justify-content: space-between;
 		width: auto;
 		position: absolute;
-		// right: 11em;
-
 		@include borderTest();
 		& > img {
 			width: 2em;
@@ -166,39 +141,51 @@
 		}
 
 		&-mobile {
-			@include borderTest;
 			position: absolute;
-			bottom: 4rem;
-			// width: 100%;
-			// width: 0%;
+			bottom: 10rem;
+			width: 100%;
+			@include flexFunc(row, center, center);
 			&-searchbar {
-				// @include borderTest;
-				// width: 0%;
 				padding: 0.4rem;
 				@include flexFunc(row, space-between, center);
-				margin: 4rem 0.6rem;
+				margin: 5rem 0.6rem;
 				background-color: white;
 				border-radius: 0.4rem;
-				// margin-bottom: 4rem;
+				border: 1px solid rgb(177, 183, 183);
 				> input {
 					width: 100%;
 					outline: none;
 					border: none;
 					padding: 0.2rem 0;
 					appearance: none;
-					@include fontSizes.font-xl;
+					@include fontSizes.xl;
 				}
 
 				> i {
 					margin-left: 0.4rem;
-					@include fontSizes.font-xl;
+					@include fontSizes.xl;
 				}
 				margin-bottom: 2rem;
 			}
 
 			&-btn {
+				padding: 0.4rem;
+				border: none;
+				background: transparent;
+				padding: 0.8rem;
+				border-radius: 50%;
+				margin: 0 0.8rem;
+				cursor: pointer;
+
 				> i {
-					@include fontSizes.font-4xl;
+					@include fontSizes.xl4;
+					color: $fontColor;
+				}
+
+				&:active {
+					background-color: $primaryColor;
+					border-radius: 50%;
+					color: whtie;
 				}
 			}
 		}
@@ -242,18 +229,15 @@
 //mobile navigation
 
 .navActive {
-	div.nav-mobile {
-		z-index: 2;
-	}
-	i.fas.fa-bars {
-		display: none !important;
-	}
-	.nav-mobile > i.fa.fa-close {
-		display: inline-block !important;
+	div.nav-mobile-btn {
+		> button > i.fas.fa-bars {
+			display: none;
+		}
+		> button > i.fa.fa-close {
+			display: inline-block;
+		}
 	}
 	.nav {
-		// display: block !important;
-
 		left: 0;
 	}
 }
