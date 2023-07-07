@@ -33,9 +33,9 @@
 			flex-direction: column;
 			justify-content: space-around;
 			font-weight: 400;
-			@include borderTest;
+			// @include borderTest;
 			position: absolute;
-			top: 5rem;
+			// top: 5rem;
 			width: 100%;
 			&-list {
 				margin: 0.6rem 0;
@@ -121,10 +121,6 @@
 		// 		margin: 0 0.4em;
 		// 	}
 		// }
-
-		// & div.logo {
-		// 	left: 5em;
-		// }
 	}
 
 	&-actions {
@@ -173,7 +169,38 @@
 			@include borderTest;
 			position: absolute;
 			bottom: 4rem;
-			width: 100%;
+			// width: 100%;
+			// width: 0%;
+			&-searchbar {
+				// @include borderTest;
+				// width: 0%;
+				padding: 0.4rem;
+				@include flexFunc(row, space-between, center);
+				margin: 4rem 0.6rem;
+				background-color: white;
+				border-radius: 0.4rem;
+				// margin-bottom: 4rem;
+				> input {
+					width: 100%;
+					outline: none;
+					border: none;
+					padding: 0.2rem 0;
+					appearance: none;
+					@include fontSizes.font-xl;
+				}
+
+				> i {
+					margin-left: 0.4rem;
+					@include fontSizes.font-xl;
+				}
+				margin-bottom: 2rem;
+			}
+
+			&-btn {
+				> i {
+					@include fontSizes.font-4xl;
+				}
+			}
 		}
 	}
 }
