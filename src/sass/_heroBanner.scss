@@ -1,48 +1,50 @@
 @use './helper-fontSizes' as fontSizes;
 
 .hero-banner {
-	@include flex;
-	justify-content: center;
+	@include flexFunc(row, center, null);
 	height: 90vh;
+
 	@include fontLato;
-	//  font-family: 'Poppins', sans-serif;
+
 	&-img-container {
-		// width: 40vw;
 		height: 100%;
 		position: relative;
 	}
 
 	&-img-wrapper {
-		// width: 100%;
-		// min-width: 44rem;
-		width: 20rem;
-		@include borderTest;
-		position: absolute;
-		top: 5rem;
-		left: -17rem;
+		// width: 20rem;
+		opacity: 0.2;
+		// @include borderTest;
+		position: fixed;
+		top: 6rem;
+		left: -19rem;
 		& > img {
-			width: 28rem;
+			width: 38rem;
 		}
 	}
 
 	&-content {
-		position: relative;
-		@include borderTest;
-		width: 15rem;
-		right: -4rem;
-		margin-top: 3rem;
+		z-index: 20;
+		// @include borderTest;
+		@include flexFunc(column, flex-start, null);
+		margin-top: 5rem;
+		padding: 1rem;
+		width: 20rem;
+
+		&-headers {
+			@include flexFunc(column, null, center);
+			// @include borderTest;
+		}
+
 		&-mini {
 			&-headers {
 				margin-bottom: 0.4rem;
+				width: 100%;
 			}
 			&-border {
 				width: 3rem;
 				@include miniBorderline;
 			}
-		}
-
-		&-headers {
-			@include borderTest;
 		}
 
 		&-header {
@@ -63,7 +65,7 @@
 			// width: 80%;
 			padding-right: 0.2rem;
 			margin-top: 0.4rem;
-			@include fontSizes.xs;
+			@include fontSizes.base;
 			@include fontQuicksand;
 		}
 
@@ -85,20 +87,18 @@
 		}
 
 		&__product-category {
-			@include borderTest;
+			// @include borderTest;
 			@include flex;
 			justify-content: space-between;
-			padding: 1rem;
+
 			margin-top: 2rem;
-			// width: 80%;
+
 			&__content-header {
-				// font-size: 0.7rem;
+				@include fontSizes.xs;
 			}
 			&__content-text {
 				@include primaryColor;
 				font-weight: 600;
-				// font-size: 1.2rem;
-				// padding: 0.4rem 0;
 			}
 		}
 	}
