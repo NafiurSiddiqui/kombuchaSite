@@ -1,15 +1,14 @@
 .big-corps {
- //  @include borderTest;
- @include flex;
- justify-content: space-between;
- padding: 2em;
- @include tertiaryBGColor;
- margin-top: 2em;
- &__image-container {
-  width: 11em;
-  padding: 1em;
-  & > img {
-   width: 100%;
-  }
- }
+	@include flex;
+	justify-content: space-between;
+	padding: 2em;
+	@include tertiaryBGColor;
+	margin-top: 2em;
+	&__image-container {
+		width: 11em;
+		padding: 1em;
+		& > img {
+			width: 100%;
+		}
+	}
 }
