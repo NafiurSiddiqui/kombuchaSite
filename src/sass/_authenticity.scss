@@ -34,13 +34,11 @@
 }
 
 .authenticity {
-	//  @include borderTest;
+	@include borderTest;
 	// background: #303030;
-
-	padding: 1.2rem;
+	// padding: 1.2rem;
+	width: 100%;
 	text-align: center;
-	width: 60vw;
-	height: 100vh;
 	margin: 0 auto;
 	margin-top: 6rem;
 
@@ -53,34 +51,35 @@
 		@include fontSizes.lg;
 	}
 
-	&-icons-wrapper {
-		@include flex;
-		justify-content: space-between;
-		padding: 1rem;
-	}
 	&-icons {
+		// @include borderTest;
+
+		&-wrapper {
+			@include flexFunc(column, center, center);
+			justify-content: space-between;
+			padding: 1rem;
+		}
 		&-container {
-			width: 7rem;
+			width: 80%;
+			@include flexFunc(column, center, center);
+			padding: 1.5rem 0;
+			// @include borderTest;
 		}
 		margin-bottom: 1rem;
 	}
 
 	&-icon {
-		width: 90%;
-		min-width: 4rem;
+		&-wrapper {
+			width: 7rem;
+
+			> img {
+				width: 100%;
+			}
+		}
 
 		&-paragraph {
-			width: 7rem;
+			padding: 1rem 0 0;
+			@include fontSizes.lg;
 		}
-	}
-
-	&-text-container {
-		@include flex;
-		justify-content: space-between;
-		padding: 1rem;
-	}
-
-	div.primary__btn.authenticity {
-		margin: 0 auto !important;
 	}
 }

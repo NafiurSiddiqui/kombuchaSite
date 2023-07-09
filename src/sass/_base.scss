@@ -33,14 +33,14 @@ li {
 button.primary-btn,
 div.primary-btn__product-showcase {
 	border: none;
-	padding: 1.2em 1em;
-	width: 12em;
+	padding: 1.2rem 1rem;
+	width: 12rem;
 	text-align: center;
 	background-color: $secondaryColor;
 	color: #ffffff;
 	letter-spacing: 2px;
 	font-weight: bold;
-	margin: 1em 0;
+	margin: 1rem 0;
 	cursor: pointer;
 	font-size: 0.8rem;
 	box-sizing: content-box;
@@ -67,16 +67,16 @@ h1:not(.hero-banner-content__header) {
 
 .chevron-container,
 .chevron-container-popular {
-	padding: 1em;
+	padding: 1rem;
 	text-align: center;
 	cursor: pointer;
 	i.fas.fa-chevron-left,
 	i.fas.fa-chevron-right {
-		padding: 0.6em 0.8em;
+		padding: 0.6rem 0.8rem;
 		font-size: 1.2rem;
 		color: silver;
 		border-radius: 50%;
-		margin: 0 1em;
+		margin: 0 1rem;
 		font-size: 1.8rem;
 		@include transition(0.3s);
 	}

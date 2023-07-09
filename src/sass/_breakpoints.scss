@@ -1,149 +1,56 @@
 // @import './helper-breakpoints';
 
-.header {
-	// @media screen and (max-width: 1320px) {
-	// 	&-icon {
-	// 		right: 1%;
-	// 	}
-	// }
-
-	// @media screen and (max-width: 680px) {
-	// 	&-icon {
-	// 		right: 4%;
-	// 		& > img {
-	// 			width: 1.8em;
-	// 			margin: 0 0.4em;
-	// 		}
-	// 	}
-	// }
-
-	// @media screen and (max-width: 580px) {
-	// 	.nav {
-	// 		width: 60vw;
-	// 	}
-	// 	.navlist {
-	// 		line-height: 2em;
-	// 		font-size: 3.8vw;
-	// 		> a > li {
-	// 			font-weight: bold;
-	// 		}
-	// 	}
-	// }
-
-	// @media screen and (max-width: 480px) {
-	// 	.nav {
-	// 		width: 100vw;
-	// 	}
-	// 	&-icon {
-	// 		& > img {
-	// 			width: 1.7em;
-	// 			margin: 0 0.4em;
-	// 		}
-	// 	}
-
-	// 	& div.logo {
-	// 		left: 5em;
-	// 	}
-	// }
-}
-
-.hero-banner {
-	// @media screen and (max-width: 1128px) {
-	// 	&_img-wrapper {
-	// 		min-width: 60vw;
-	// 		top: 7em;
-	// 		position: relative;
-	// 		z-index: -1;
-	// 	}
-
-	// 	&-content {
-	// 		margin-top: -6vh;
-	// 	}
-	// 	&-content__header {
-	// 		font-size: 8vw;
-	// 	}
-	// }
-
-	// @media screen and (max-width: 960px) {
-	// 	&-content__product-category {
-	// 		width: 100%;
-
-	// 		&__content-text {
-	// 			font-size: 3vw;
-	// 		}
-	// 	}
-	// }
-	// @media screen and (max-width: 680px) {
-	// 	&-content_paragraph {
-	// 		width: 100%;
-	// 	}
-	// 	&_img-wrapper {
-	// 		top: 20vh;
-	// 	}
-	// 	&-content__product-category {
-	// 		position: absolute;
-	// 		left: 0;
-	// 		padding: 1em 2em;
-	// 	}
-	// }
-
-	// @media screen and (max-width: 480px) {
-	// 	&-content__product-category__content-header {
-	// 		font-size: 0.6rem;
-	// 	}
-	// }
-}
-
-.big-corps {
-	height: 8em;
-	padding: 1em 0.2vw;
-	margin-top: 0;
-	&__image-container {
-		padding: 1.4vw;
-	}
-}
+// .big-corps {
+// 	height: 8em;
+// 	padding: 1em 0.2vw;
+// 	margin-top: 0;
+// 	&__image-container {
+// 		padding: 1.4vw;
+// 	}
+// }
 
 .authenticity {
-	@media screen and (max-width: 1000px) {
-		width: 100%;
-		padding: 0 4vw;
-	}
-	@media screen and (max-width: 680px) {
-		width: 100%;
-		padding: 0 1vw;
-		&-icons-container {
-			width: 15vw;
-		}
+	// @media screen and (max-width: 1000px) {
+	// 	width: 100%;
+	// 	padding: 0 4vw;
+	// }
+	// @media screen and (max-width: 680px) {
+	// 	width: 100%;
+	// 	padding: 0 1vw;
+	// 	&-icons-container {
+	// 		width: 15vw;
+	// 	}
 
-		&-icon-paragraph {
-			font-size: 2.6vw;
-		}
-	}
-	@media screen and (max-width: 480px) {
-		&-icons-container {
-			width: 4em;
-		}
+	// 	&-icon-paragraph {
+	// 		font-size: 2.6vw;
+	// 	}
+	// }
 
-		&-icon {
-			min-width: 3em;
-		}
+	// @media screen and (max-width: 480px) {
+	// 	&-icons-container {
+	// 		width: 4em;
+	// 	}
 
-		&-text-container {
-			padding: 0.6em;
-		}
+	// 	&-icon {
+	// 		min-width: 3em;
+	// 	}
 
-		div.primary__btn.authenticity#authenticity-btn {
-			margin-top: 3em !important;
-		}
-	}
+	// 	&-text-container {
+	// 		padding: 0.6em;
+	// 	}
 
-	@media screen and (max-width: 380px) {
-		&-text-container {
-			padding: 0.8em;
-			letter-spacing: 1px;
-			line-height: 0.8em;
-		}
-	}
+	// 	div.primary__btn.authenticity#authenticity-btn {
+	// 		margin-top: 3em !important;
+	// 	}
+	// }
+
+	// @media screen and (max-width: 380px) {
+	// 	&-text-container {
+	// 		padding: 0.8em;
+	// 		letter-spacing: 1px;
+	// 		line-height: 0.8em;
+	// 	}
+	// }
 }
 
 .arie-kombucha {
