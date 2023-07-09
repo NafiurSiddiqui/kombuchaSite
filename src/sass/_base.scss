@@ -30,8 +30,9 @@ li {
 	list-style-type: none;
 }
 
-div.primary-btn,
+button.primary-btn,
 div.primary-btn__product-showcase {
+	border: none;
 	padding: 1.2em 1em;
 	width: 12em;
 	text-align: center;

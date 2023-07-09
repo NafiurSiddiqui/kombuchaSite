@@ -1,3 +1,5 @@
+@use './helper-fontSizes' as fontSizes;
+
 .big-corps {
 	@include tertiaryBGColor;
 	@include flex;
@@ -6,15 +8,13 @@
 		@include flex;
 		justify-content: space-between;
 		padding: 2rem;
-		transition: transform 0.5s ease-in-out;
+		// transition: transform 0.5s ease-in-out;
 		animation: slideAnimation 40s linear infinite;
 	}
 
 	&__image-container {
-		// width: 11rem;
 		padding: 1rem;
 		& > img {
-			// width: 100%;
 			width: 7rem;
 			padding: 0 1rem;
 		}
@@ -36,15 +36,21 @@
 .authenticity {
 	//  @include borderTest;
 	// background: #303030;
+
 	padding: 1.2rem;
 	text-align: center;
 	width: 60vw;
 	height: 100vh;
 	margin: 0 auto;
-	margin-top: 2rem;
+	margin-top: 6rem;
 
-	&-sub-header {
-		padding: 1rem 0;
+	&-info-wrapper {
+		margin-top: 2rem;
+	}
+
+	&-paragraph {
+		padding: 1.2rem 0;
+		@include fontSizes.lg;
 	}
 
 	&-icons-wrapper {
