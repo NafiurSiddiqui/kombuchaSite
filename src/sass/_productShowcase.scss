@@ -34,66 +34,67 @@
 			text-align: center;
 		}
 
-		&__img-content-wrapper {
-			position: relative;
-		}
-
-		&__img-container {
-			@include borderTest;
-
-			&__top-frame {
-				@include borderTest;
-				width: 6rem;
-				display: inline-block;
-				height: 8rem;
-				position: absolute;
-				right: 0;
-				border-top: 2px solid $primaryColor;
-				border-right: 2px solid $primaryColor;
-			}
-
-			&__top-frame .peach {
-				// top: 13rem;
-				// left: 0vw;
-				border-top: 2px solid $peachColor;
-				border-left: 2px solid $peachColor;
-				border-right: none;
-			}
-			&__top-frame .blackberry {
-				border-top: 2px solid $secondaryColor;
-				border-right: 2px solid $secondaryColor;
-			}
-
-			&__bottom-frame,
-			&__bottom-frame-peach {
-				width: 6rem;
-				display: inline-block;
-				height: 8rem;
-				position: absolute;
-				bottom: 0;
-			}
-			&__bottom-frame {
-				// bottom: 4rem;
-				border-bottom: 2px solid $primaryColor;
-				border-left: 2px solid $primaryColor;
-			}
-			&__bottom-frame-peach {
-				border-bottom: 2px solid $peachColor;
-				border-right: 2px solid $peachColor;
-				border-left: none;
-				// right: -35vw;
-			}
-
-			&__bottom-frame .blackberry {
-				border-bottom: 2px solid $secondaryColor;
-				border-left: 2px solid $secondaryColor;
-			}
-		}
 		&.peach {
 			// order: 2;
 		}
 		&__img-container.peach {
 			// order: 1;
+		}
+	}
+
+	&__img-content-wrapper {
+		position: relative;
+	}
+
+	&__img-container {
+		@include borderTest;
+
+		&__top-frame {
+			@include borderTest;
+			width: 6rem;
+			display: inline-block;
+			height: 8rem;
+			position: absolute;
+			right: 0;
+			border-top: 2px solid $primaryColor;
+			border-right: 2px solid $primaryColor;
+		}
+
+		&__top-frame .peach {
+			// top: 13rem;
+			// left: 0vw;
+			border-top: 2px solid $peachColor;
+			border-left: 2px solid $peachColor;
+			border-right: none;
+		}
+		&__top-frame .blackberry {
+			border-top: 2px solid $secondaryColor;
+			border-right: 2px solid $secondaryColor;
+		}
+
+		&__bottom-frame,
+		&__bottom-frame .peach {
+			width: 6rem;
+			display: inline-block;
+			height: 8rem;
+			position: absolute;
+			bottom: 0;
+		}
+		&__bottom-frame {
+			// bottom: 4rem;
+			border-bottom: 2px solid $primaryColor;
+			border-left: 2px solid $primaryColor;
+		}
+		&__bottom-frame .peach {
+			border-bottom: 2px solid $peachColor;
+			border-right: 2px solid $peachColor;
+			border-left: none;
+			// right: -35vw;
+		}
+
+		&__bottom-frame .blackberry {
+			border-bottom: 2px solid $secondaryColor;
+			border-left: 2px solid $secondaryColor;
 		}
 	}
 
