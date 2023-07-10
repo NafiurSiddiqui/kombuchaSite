@@ -2,17 +2,15 @@
 
 .product-showcase {
 	&-container {
-		padding: 0 1rem;
+		padding: 2rem 1rem;
 		margin: 3rem 0;
 	}
-	@include borderTest;
 
 	&-description {
 		&__btn-container {
 			text-align: center;
 		}
 		&-headers {
-			// @include borderTest;
 		}
 
 		&__mini-header {
@@ -42,15 +40,19 @@
 		}
 	}
 
-	&__img-content-wrapper {
-		position: relative;
-	}
-
 	&__img-container {
-		@include borderTest;
+		height: 28rem;
+		margin-top: 3rem;
+		&__content-wrapper {
+			position: relative;
+			height: 100%;
+		}
 
+		&__img-content-wrapper {
+			height: 100%;
+			@include flexFunc(column, center, center);
+		}
 		&__top-frame {
-			@include borderTest;
 			width: 6rem;
 			display: inline-block;
 			height: 8rem;
@@ -99,8 +101,9 @@
 	}
 
 	&-img-wrapper {
-		width: 16vw;
+		width: 8rem;
 		margin: 0 auto;
+		margin-bottom: 4rem;
 		@include transition(1s);
 		cursor: pointer;
 		&:hover {
@@ -117,8 +120,8 @@
 		height: 8rem;
 		text-align: center;
 		position: relative;
-		top: 4rem;
-
+		top: 3rem;
+		left: -5rem;
 		&-peach {
 			right: -28vw;
 		}
@@ -139,8 +142,8 @@
 			}
 		}
 
-		&__text,
-		&__text-peach {
+		&-text,
+		&-text-peach {
 			position: relative;
 			right: -6rem;
 			top: -5rem;
