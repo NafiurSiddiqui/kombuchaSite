@@ -127,10 +127,9 @@
 		}
 		&__play-btn {
 			padding: 3rem;
-			//    top: -0.5rem;
-			//    position: relative;
 			border: 1px dashed $primaryColor;
 			border-radius: 50%;
+			color: $primaryColor;
 			cursor: pointer;
 			@include transition(0.2s);
 			&:hover {
