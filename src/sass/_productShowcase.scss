@@ -7,7 +7,7 @@
 	}
 	@include borderTest;
 
-	&-article {
+	&-description {
 		&__btn-container {
 			text-align: center;
 		}
@@ -23,12 +23,12 @@
 			width: 100%;
 		}
 
-		&__header {
+		&-header {
 			margin: 0.4rem 0;
 			text-align: center;
 		}
 
-		&__paragraph {
+		&-paragraph {
 			// margin-bottom: 3rem;
 			margin: 1rem 0;
 			text-align: center;
@@ -41,7 +41,7 @@
 		&__img-container {
 			@include borderTest;
 
-			&__top-decoration {
+			&__top-frame {
 				@include borderTest;
 				width: 6rem;
 				display: inline-block;
@@ -52,39 +52,39 @@
 				border-right: 2px solid $primaryColor;
 			}
 
-			&__top-decoration .peach {
+			&__top-frame .peach {
 				// top: 13rem;
 				// left: 0vw;
 				border-top: 2px solid $peachColor;
 				border-left: 2px solid $peachColor;
 				border-right: none;
 			}
-			&__top-decoration .blackberry {
+			&__top-frame .blackberry {
 				border-top: 2px solid $secondaryColor;
 				border-right: 2px solid $secondaryColor;
 			}
 
-			&__bottom-decoration,
-			&__bottom-decoration-peach {
+			&__bottom-frame,
+			&__bottom-frame-peach {
 				width: 6rem;
 				display: inline-block;
 				height: 8rem;
 				position: absolute;
 				bottom: 0;
 			}
-			&__bottom-decoration {
+			&__bottom-frame {
 				// bottom: 4rem;
 				border-bottom: 2px solid $primaryColor;
 				border-left: 2px solid $primaryColor;
 			}
-			&__bottom-decoration-peach {
+			&__bottom-frame-peach {
 				border-bottom: 2px solid $peachColor;
 				border-right: 2px solid $peachColor;
 				border-left: none;
 				// right: -35vw;
 			}
 
-			&__bottom-decoration .blackberry {
+			&__bottom-frame .blackberry {
 				border-bottom: 2px solid $secondaryColor;
 				border-left: 2px solid $secondaryColor;
 			}
@@ -106,7 +106,7 @@
 			transform: scale(1.2);
 		}
 	}
-	&-article__img {
+	&-img {
 		width: 100%;
 	}
 
