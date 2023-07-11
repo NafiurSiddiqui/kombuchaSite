@@ -1,3 +1,5 @@
+@use './helper-fontSizes' as fontSizes;
+
 html {
 	box-sizing: border-box;
 	@include fontLato;
@@ -72,17 +74,19 @@ h1:not(.hero-banner-content__header) {
 	cursor: pointer;
 	i.fas.fa-chevron-left,
 	i.fas.fa-chevron-right {
-		padding: 0.6rem 0.8rem;
+		padding: 0.6rem 1.2rem;
 		font-size: 1.2rem;
 		color: silver;
 		border-radius: 50%;
 		margin: 0 1rem;
-		font-size: 1.8rem;
+		// font-size: 1.8rem;
+		@include fontSizes.xl3;
 		@include transition(0.3s);
 	}
 	i.fas.fa-chevron-left:hover,
 	i.fas.fa-chevron-right:hover {
-		background-color: rgb(39, 39, 39);
+		background-color: $secondaryColor;
+		color: white;
 	}
 }
 
