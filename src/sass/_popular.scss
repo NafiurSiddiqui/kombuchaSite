@@ -1,6 +1,7 @@
 .popular {
-	margin-top: 1rem;
+	margin: 2rem 0 4rem;
 	padding: 1rem 3vw;
+	// @include borderTest;
 	&-header-content {
 		// padding: 1rem 0.4rem;
 		text-align: center;
