@@ -1,16 +1,14 @@
 .popular {
 	margin: 2rem 0 4rem;
 	padding: 1rem 3vw;
-	// @include borderTest;
+
 	&-header-content {
-		// padding: 1rem 0.4rem;
 		text-align: center;
 	}
 
 	&-navigation-number {
 		@include flex;
 		padding: 0.8rem;
-		// @include borderTest;
 	}
 	&-nav-number {
 		padding: 0.8rem;
@@ -40,7 +38,7 @@
 	&-card {
 		@include flexFunc(column, space-between, center);
 		border-radius: 0.4rem;
-		width: 100vw;
+		width: 90vw;
 
 		cursor: pointer;
 		//   &:hover {
@@ -48,7 +46,7 @@
 		//   }
 		@include cardShadow;
 		// @include borderTest;
-		// margin: 0 0.8rem;
+		margin: 0 0.8rem;
 		padding: 1rem 0.8rem;
 		&-description-container {
 			// width: 16rem;
