@@ -1,99 +1,99 @@
 .testimonial {
- padding: 1em;
+	padding: 1rem;
 
- &-header {
-  text-align: center;
-  padding: 1em;
-  &-header {
-   margin-bottom: 0.2em;
-  }
- }
+	&-header {
+		text-align: center;
+		padding: 1rem;
+		&-header {
+			margin-bottom: 0.2rem;
+		}
+	}
 
- &-cards {
-  @include flex;
-  width: auto;
-  border-radius: 1em;
-  &_slide1,
-  &_slide2 {
-   @include flex;
-   margin: 0 4em;
-   padding-left: 3vw;
-   @include transition(0.4s);
-  }
+	&-cards {
+		@include flex;
+		width: auto;
+		border-radius: 1rem;
+		&_slide1,
+		&_slide2 {
+			@include flex;
+			margin: 0 4rem;
+			padding-left: 3vw;
+			@include transition(0.4s);
+		}
 
-  &_slide2 {
-   transform: translateX(100%);
-  }
- }
+		&_slide2 {
+			transform: translateX(100%);
+		}
+	}
 
- &-card {
-  width: 25em;
-  height: 18em;
-  flex-shrink: 0;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 6em 1fr;
-  opacity: 0.7;
-  margin: 0 1.5em;
-  @include transition(0.5s);
-  &-name {
-   font-weight: bold;
-   letter-spacing: 1px;
-  }
-  &-img {
-   width: 4em;
-   display: inline-block;
-   height: 4em;
-   border-radius: 50%;
-   &.dinesh {
-    background: url('../img/Testimonial/dinesh.png') center;
-    background-size: cover;
-   }
-   &.erlich {
-    background: url('../img/Testimonial/erlich.jpg') center;
-    background-size: cover;
-   }
-   &.jinyang {
-    background: url('../img/Testimonial/jinyang.png') center;
-    background-size: contain;
-   }
-   &.monica {
-    background: url('../img/Testimonial/monica.jpg') top;
-    background-size: cover;
-   }
-   &.jill {
-    background: url('../img/Testimonial/jilfoyle.jpg') top;
-    background-size: cover;
-   }
-   &.richard {
-    background: url('../img/Testimonial/richard.jpg') top;
-    background-size: cover;
-   }
+	&-card {
+		width: 25rem;
+		height: 18rem;
+		flex-shrink: 0;
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: 6rem 1fr;
+		opacity: 0.7;
+		margin: 0 1.5rem;
+		@include transition(0.5s);
+		&-name {
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+		&-img {
+			width: 4rem;
+			display: inline-block;
+			height: 4rem;
+			border-radius: 50%;
+			&.dinesh {
+				background: url('../img/Testimonial/dinesh.png') center;
+				background-size: cover;
+			}
+			&.erlich {
+				background: url('../img/Testimonial/erlich.jpg') center;
+				background-size: cover;
+			}
+			&.jinyang {
+				background: url('../img/Testimonial/jinyang.png') center;
+				background-size: contain;
+			}
+			&.monica {
+				background: url('../img/Testimonial/monica.jpg') top;
+				background-size: cover;
+			}
+			&.jill {
+				background: url('../img/Testimonial/jilfoyle.jpg') top;
+				background-size: cover;
+			}
+			&.richard {
+				background: url('../img/Testimonial/richard.jpg') top;
+				background-size: cover;
+			}
 
-   &-stars {
-    text-align: center;
-    margin-right: 5em;
-    padding-top: 1em;
-    line-height: 1.8em;
-   }
-  }
-  &-quote-img__wrapper > img {
-   position: relative;
-   top: 3em;
-   opacity: 0.2;
-  }
-  &-paragraph {
-   grid-column: 1/3;
-   text-align: center;
-  }
- }
+			&-stars {
+				text-align: center;
+				margin-right: 5rem;
+				padding-top: 1rem;
+				line-height: 1.8rem;
+			}
+		}
+		&-quote-img__wrapper > img {
+			position: relative;
+			top: 3rem;
+			opacity: 0.2;
+		}
+		&-paragraph {
+			grid-column: 1/3;
+			text-align: center;
+		}
+	}
 
- i.fa.fa-star {
-  @include primaryColor;
- }
+	i.fa.fa-star {
+		@include primaryColor;
+	}
 }
 
 .cardActive {
- @include cardShadow;
- opacity: 1;
+	@include cardShadow;
+	opacity: 1;
 }
