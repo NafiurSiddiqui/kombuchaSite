@@ -427,68 +427,68 @@
 
 .footer {
 	@media screen and (max-width: 880px) {
-		padding: 2em 1em;
+		// padding: 2rem 1rem;
 
 		&-links-container {
-			width: 100%;
+			// width: 100%;
 		}
 	}
 
 	@media screen and (max-width: 680px) {
-		flex-direction: column;
+		// flex-direction: column;
 
 		&-general {
-			margin-top: 2em;
-			order: 2;
-			width: 100%;
-			padding: 1em 3em;
+			// margin-top: 2rem;
+			// order: 2;
+			// width: 100%;
+			// padding: 1rem 3rem;
 			&-content {
-				width: 100%;
+				// width: 100%;
 			}
 			&-paragraph {
-				font-size: 2.8vw;
+				// font-size: 2.8vw;
 			}
 			&-social-media {
-				width: 27%;
+				// width: 27%;
 			}
 		}
 
 		&-links {
-			width: 100%;
+			// width: 100%;
 
 			&-container {
-				justify-content: space-around;
+				// justify-content: space-around;
 			}
 		}
 	}
 
 	@media screen and (max-width: 480px) {
 		&-general {
-			padding: 1em 1em;
+			// padding: 1rem;
 			&-social-media {
-				width: 44%;
+				// width: 44%;
 			}
 			&-paragraph {
-				font-size: 3.6vw;
+				// font-size: 3.6vw;
 			}
 		}
 
 		&-links {
-			font-size: 3vw;
+			// font-size: 3vw;
 		}
 
 		&-copyright {
-			font-size: 3vw;
+			// font-size: 3vw;
 		}
 	}
 	@media screen and (max-width: 380px) {
 		&-links-header {
-			font-size: 5vw;
+			// font-size: 5vw;
 		}
-		font-size: 2vw;
+		// font-size: 2vw;
 
 		&-copyright {
-			font-size: 3vw;
+			// font-size: 3vw;
 		}
 	}
 }

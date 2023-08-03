@@ -1,43 +1,52 @@
 .footer {
 	@include tertiaryBGColor;
 	// @include borderTest;
-	padding: 2em 4em;
+	// padding: 2rem 4rem;
+	padding: 2rem 1rem;
 	@include flexFunc(column, space-between, flex-start);
 
 	&-general {
-		padding: 1em;
+		text-align: center;
+		// @include borderTest;
+		padding: 1rem;
 		width: 50%;
 		&-header {
-			margin-bottom: 1em;
+			margin-bottom: 1rem;
 			font-size: 1.6rem;
 		}
 
-		margin-top: 2em;
+		margin-top: 2rem;
 		order: 2;
 		width: 100%;
-		padding: 1em 3em;
+		// padding: 1rem 3rem;
 		&-content {
 			width: 100%;
 		}
 		&-paragraph {
-			font-size: 2.8vw;
+			font-size: 0.9rem;
 		}
 
 		// &-paragraph {
 		// 	font-size: 1.2rem;
 		// }
 		// &-content {
-		// 	width: 17em;
-		// 	line-height: 1.5em;
+		// 	width: 17rem;
+		// 	line-height: 1.5rem;
 		// }
 
 		&-social-media {
-			font-size: 1.8rem;
-			margin-top: 1em;
-			@include flex;
-			justify-content: space-between;
-			// width: 50%;
-			width: 27%;
+			font-size: 2.6rem;
+			margin-top: 1rem;
+			@include flexFunc(row, center, null);
+			// justify-content: center;
+			// @include borderTest;
+
+			&-wrapper {
+				// @include borderTest;
+				@include flexFunc(row, space-between, null);
+				width: 18rem;
+				height: auto;
+			}
 			& > a > i {
 				transition: all 0.3s ease-in-out;
 
@@ -51,23 +60,25 @@
 
 	&-links {
 		// width: 50%;
-		// width: 100%;
-
+		width: 100%;
+		font-size: 0.95rem;
 		&-container {
-			width: 36vw;
+			// width: 36vw;
+			width: 100%;
 			@include flex;
-			justify-content: space-between;
-			line-height: 2.2em;
+			// justify-content: space-between;
+			justify-content: space-around;
+			line-height: 2.2rem;
 			align-items: flex-start;
 			flex-shrink: 0;
 		}
 		&-header {
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 		}
 
 		&-links > a {
 			transition: all 0.3s ease-in-out;
-			padding: 0.2em 0;
+			padding: 0.2rem 0;
 			&:hover {
 				border-bottom: 2px solid $primaryColor;
 				opacity: 0.9;
@@ -77,6 +88,7 @@
 
 	&-copyright {
 		text-align: center;
-		padding: 1em;
+		padding: 1rem;
+		font-size: 0.8rem;
 	}
 }
