@@ -75,6 +75,8 @@
 				margin-right: 5rem;
 				padding-top: 1rem;
 				line-height: 1.8rem;
+				// @include borderTest;
+				width: 100%;
 			}
 		}
 		&-quote-img__wrapper > img {
