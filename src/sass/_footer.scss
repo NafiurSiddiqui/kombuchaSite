@@ -1,76 +1,86 @@
 .footer {
- @include tertiaryBGColor;
- //  @include borderTest;
- padding: 2em 4em;
- @include flex;
- justify-content: space-between;
- align-items: flex-start;
- &-left,
- &-right {
-  //   @include borderTest;
- }
+	@include tertiaryBGColor;
+	// @include borderTest;
+	padding: 2em 4em;
+	@include flexFunc(column, space-between, flex-start);
 
- &-left {
-  padding: 1em;
-  width: 50%;
-  &-header {
-   margin-bottom: 1em;
-   font-size: 1.6rem;
-  }
+	&-general {
+		padding: 1em;
+		width: 50%;
+		&-header {
+			margin-bottom: 1em;
+			font-size: 1.6rem;
+		}
 
-  &-paragraph {
-   font-size: 1.2rem;
-  }
-  &-content {
-   width: 17em;
-   line-height: 1.5em;
-  }
+		margin-top: 2em;
+		order: 2;
+		width: 100%;
+		padding: 1em 3em;
+		&-content {
+			width: 100%;
+		}
+		&-paragraph {
+			font-size: 2.8vw;
+		}
 
-  &-social-media {
-   font-size: 1.8rem;
-   margin-top: 1em;
-   @include flex;
-   justify-content: space-between;
-   width: 50%;
+		// &-paragraph {
+		// 	font-size: 1.2rem;
+		// }
+		// &-content {
+		// 	width: 17em;
+		// 	line-height: 1.5em;
+		// }
 
-   & > a > i {
-    transition: all 0.3s ease-in-out;
+		&-social-media {
+			font-size: 1.8rem;
+			margin-top: 1em;
+			@include flex;
+			justify-content: space-between;
+			// width: 50%;
+			width: 27%;
+			& > a > i {
+				transition: all 0.3s ease-in-out;
 
-    &:hover {
-     color: #373553;
-     transform: scale(1.2);
-    }
-   }
-  }
- }
+				&:hover {
+					color: #373553;
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
 
- &-right {
-  width: 50%;
+	&-right {
+		// width: 50%;
+		// width: 100%;
 
-  &-header {
-   font-size: 1.4rem;
-  }
- }
- &-right-container {
-  width: 36vw;
-  @include flex;
-  justify-content: space-between;
-  line-height: 2.2em;
-  align-items: flex-start;
-  flex-shrink: 0;
- }
+		&-container {
+			// justify-content: space-around;
+		}
+		&-header {
+			font-size: 1.4rem;
+		}
+	}
 
- &-right-lists > a {
-  transition: all 0.3s ease-in-out;
-  padding: 0.2em 0;
-  &:hover {
-   border-bottom: 2px solid $primaryColor;
-   opacity: 0.9;
-  }
- }
+	&-right-container {
+		width: 36vw;
+		@include flex;
+		justify-content: space-between;
+		line-height: 2.2em;
+		align-items: flex-start;
+		flex-shrink: 0;
+	}
 
- &-copyright {
-  text-align: center;
-  padding: 1em;
- }
+	&-right-lists > a {
+		transition: all 0.3s ease-in-out;
+		padding: 0.2em 0;
+		&:hover {
+			border-bottom: 2px solid $primaryColor;
+			opacity: 0.9;
+		}
+	}
+
+	&-copyright {
+		text-align: center;
+		padding: 1em;
+	}
 }
