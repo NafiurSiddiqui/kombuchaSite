@@ -429,7 +429,7 @@
 	@media screen and (max-width: 880px) {
 		padding: 2em 1em;
 
-		&-right-container {
+		&-links-container {
 			width: 100%;
 		}
 	}
@@ -453,7 +453,7 @@
 			}
 		}
 
-		&-right {
+		&-links {
 			width: 100%;
 
 			&-container {
@@ -473,7 +473,7 @@
 			}
 		}
 
-		&-right {
+		&-links {
 			font-size: 3vw;
 		}
 
@@ -482,7 +482,7 @@
 		}
 	}
 	@media screen and (max-width: 380px) {
-		&-right-header {
+		&-links-header {
 			font-size: 5vw;
 		}
 		font-size: 2vw;
