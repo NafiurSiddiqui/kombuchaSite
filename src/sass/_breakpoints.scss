@@ -1,13 +1,5 @@
 // @import './helper-breakpoints';
-
-// .big-corps {
-// 	height: 8em;
-// 	padding: 1em 0.2vw;
-// 	margin-top: 0;
-// 	&__image-container {
-// 		padding: 1.4vw;
-// 	}
-// }
+@use './helper-fontSizes' as fontSizes;
 
 .hero-banner {
 	@media screen and (min-width: 480px) {
@@ -17,8 +9,9 @@
 			}
 
 			&-wrapper {
-				// left: -75vw;
-				// left: calc(-75vw + 80px);
+				// left: -55%;
+				// left: calc(2vw);
+				opacity: 0.7;
 				width: 100%;
 			}
 		}
@@ -26,6 +19,73 @@
 		&-content {
 			position: absolute;
 			right: 6%;
+		}
+	}
+
+	@media screen and (min-width: 580px) {
+		&-content {
+			width: 56%;
+		}
+		&-img {
+			&-wrapper {
+				left: -18rem;
+				// opacity: 0.7;
+				// width: 100%;
+
+				> img {
+					width: 46rem;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 780px) {
+		&-content {
+			width: 30rem;
+		}
+		&-img {
+			&-wrapper {
+				left: -36vw;
+				// opacity: 0.7;
+				// width: 100%;
+
+				> img {
+					width: 50rem;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 880px) {
+		&-content {
+			// width: 30rem;
+			top: 10rem;
+
+			&-mini-header {
+				font-size: large;
+			}
+
+			&-headers {
+				> h1 {
+					@include fontSizes.xl5;
+				}
+				> h2 {
+					@include fontSizes.xl4;
+				}
+			}
+		}
+		&-img {
+			&-wrapper {
+				// @include borderTest;
+				// width: 70%;
+				left: -15rem;
+				// opacity: 0.7;
+				// width: 100%;
+
+				> img {
+					// width: 46rem;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
