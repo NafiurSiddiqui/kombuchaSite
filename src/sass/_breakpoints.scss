@@ -9,6 +9,27 @@
 // 	}
 // }
 
+.hero-banner {
+	@media screen and (min-width: 480px) {
+		&-img {
+			&-container {
+				width: 100%;
+			}
+
+			&-wrapper {
+				// left: -75vw;
+				// left: calc(-75vw + 80px);
+				width: 100%;
+			}
+		}
+
+		&-content {
+			position: absolute;
+			right: 6%;
+		}
+	}
+}
+
 .authenticity {
 	// @media screen and (max-width: 1000px) {
 	// 	width: 100%;
@@ -433,7 +454,6 @@
 			// width: 100%;
 		}
 	}
-
 	@media screen and (max-width: 680px) {
 		// flex-direction: column;
 
@@ -461,7 +481,6 @@
 			}
 		}
 	}
-
 	@media screen and (max-width: 480px) {
 		&-general {
 			// padding: 1rem;

@@ -28,7 +28,7 @@
 
 	&-content {
 		z-index: 20;
-		// @include borderTest;
+		@include borderTest;
 		@include flexFunc(column, flex-start, null);
 		margin-top: 5rem;
 		padding: 1rem;
