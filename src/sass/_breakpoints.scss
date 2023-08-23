@@ -1,4 +1,3 @@
-// @import './helper-breakpoints';
 @use './helper-fontSizes' as fontSizes;
 
 .hero-banner {
@@ -9,9 +8,7 @@
 			}
 
 			&-wrapper {
-				// left: -55%;
-				// left: calc(2vw);
-				opacity: 0.7;
+				opacity: 0.8;
 				width: 100%;
 			}
 		}
@@ -46,7 +43,7 @@
 		&-img {
 			&-wrapper {
 				left: -36vw;
-				// opacity: 0.7;
+
 				// width: 100%;
 
 				> img {
@@ -58,8 +55,8 @@
 	@media screen and (min-width: 880px) {
 		&-content {
 			// width: 30rem;
-			top: 10rem;
-
+			top: 8rem;
+			right: 2%;
 			&-mini-header {
 				font-size: large;
 			}
@@ -74,15 +71,62 @@
 			}
 		}
 		&-img {
+			&-container {
+				width: 50rem;
+			}
 			&-wrapper {
-				// @include borderTest;
-				// width: 70%;
+				@include borderTest;
 				left: -15rem;
-				// opacity: 0.7;
-				// width: 100%;
+				opacity: 0.9;
+				> img {
+					@include borderTest;
+					width: 100%;
+				}
+			}
+		}
+	}
 
+	@media screen and (min-width: 1040px) {
+		align-items: center;
+		&-content {
+			width: auto;
+			// top: 7rem;
+			position: static;
+
+			&-wrapper {
+				width: 70%;
+			}
+			&-mini-header {
+				// @include fontSizes.xl;
+			}
+
+			&-headers {
+				align-items: flex-start;
+				> h1 {
+					@include fontSizes.xl5;
+				}
+				> h2 {
+					@include fontSizes.xl4;
+				}
+			}
+
+			&-paragraph {
+				margin: 2rem 0;
+				@include borderTest;
+				// @include fontSizes.xl;
+			}
+		}
+		&-img {
+			&-container {
+				width: 40vw;
+			}
+			&-wrapper {
+				@include borderTest;
+				position: static;
+				min-width: 44rem;
 				> img {
 					// width: 46rem;
+					@include borderTest;
 					width: 100%;
 				}
 			}

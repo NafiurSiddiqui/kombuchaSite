@@ -12,15 +12,11 @@
 	}
 
 	&-img-wrapper {
-		// width: 20rem;
 		opacity: 0.2;
-		// @include borderTest;
-		// position: fixed;
 		position: absolute;
-
 		top: 6rem;
 		left: -19rem;
-		// left: -80vw;
+
 		& > img {
 			width: 38rem;
 		}
@@ -65,9 +61,9 @@
 		}
 
 		&-paragraph {
-			// width: 80%;
+			text-align: center;
 			padding-right: 0.2rem;
-			margin-top: 0.4rem;
+			margin: 0.8rem 0;
 			@include fontSizes.base;
 			@include fontQuicksand;
 		}
