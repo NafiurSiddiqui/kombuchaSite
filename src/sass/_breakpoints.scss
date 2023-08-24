@@ -103,10 +103,10 @@
 			&-headers {
 				align-items: flex-start;
 				> h1 {
-					@include fontSizes.xl5;
+					@include fontSizes.xl7;
 				}
 				> h2 {
-					@include fontSizes.xl4;
+					@include fontSizes.xl5;
 				}
 			}
 
