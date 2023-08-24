@@ -40,7 +40,7 @@ $mobileNavBg: rgb(249 244 231);
 
 @mixin miniBorderline {
 	display: inline-block;
-	border-bottom: 1px solid rgb(173, 173, 173);
+	border-bottom: 1px solid;
 }
 
 @mixin fontLato {
