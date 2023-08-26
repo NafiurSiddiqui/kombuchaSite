@@ -16,893 +16,889 @@
 	</head>
 	<body>
 		<main class="container">
-			<header class="header">
-				<div class="logo">
-					<span class="logo-text"> KOMBUCHA </span>
-				</div>
-				<div class="nav-mobile-btn">
-					<button type="button">
-						<i class="fas fa-bars"></i>
-					</button>
-					<button type="button">
-						<i class="fa fa-close"></i>
-					</button>
-				</div>
-				<nav class="nav">
-					<div class="header-actions-mobile-searchbar">
-						<input
-							type="text"
-							name="search"
-							id="searchbar"
-							placeholder="Search for products"
-						/>
-
-						<i
-							class="fa-solid fa-magnifying-glass"
-							class="header-actions-icon"
-						></i>
+			<div class="container-wrapper">
+				<header class="header">
+					<div class="logo">
+						<span class="logo-text"> KOMBUCHA </span>
 					</div>
-					<ul class="navlists">
-						<li class="navlists-list">
-							<a href="#" rel="noopener noreferrer" class="navlists-list-link">
-								Products
-							</a>
-						</li>
-						<li class="navlists-list">
-							<a
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="navlists-list-link"
-							>
-								Story
-							</a>
-						</li>
+					<div class="nav-mobile-btn">
+						<button type="button">
+							<i class="fas fa-bars"></i>
+						</button>
+						<button type="button">
+							<i class="fa fa-close"></i>
+						</button>
+					</div>
+					<nav class="nav">
+						<div class="header-actions-mobile-searchbar">
+							<input
+								type="text"
+								name="search"
+								id="searchbar"
+								placeholder="Search for products"
+							/>
 
-						<li class="navlists-list">
-							<a
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="navlists-list-link"
-							>
-								Manufacturing
-							</a>
-						</li>
-						<li class="navlists-list">
-							<a
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="navlists-list-link"
-							>
-								Packaging
-							</a>
-						</li>
-					</ul>
-
-					<div class="header-actions-mobile">
-						<button
-							type="button"
-							class="header-actions-mobile-btn btn-cart"
-							aria-label="cart"
-						>
 							<i
-								class="fa-solid fa-cart-plus"
-								class="header-actions-mobile__cart-icon"
+								class="fa-solid fa-magnifying-glass"
+								class="header-actions-icon"
 							></i>
-						</button>
+						</div>
+						<ul class="navlists">
+							<li class="navlists-list">
+								<a
+									href="#"
+									rel="noopener noreferrer"
+									class="navlists-list-link"
+								>
+									Products
+								</a>
+							</li>
+							<li class="navlists-list">
+								<a
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="navlists-list-link"
+								>
+									Story
+								</a>
+							</li>
 
-						<button
-							type="button"
-							class="header-actions-mobile-btn btn-user"
-							aria-label="user"
-						>
-							<i
-								class="fa-regular fa-circle-user header-actions-mobile__user-icon"
-							></i>
-						</button>
-					</div>
-				</nav>
+							<li class="navlists-list">
+								<a
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="navlists-list-link"
+								>
+									Manufacturing
+								</a>
+							</li>
+							<li class="navlists-list">
+								<a
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="navlists-list-link"
+								>
+									Packaging
+								</a>
+							</li>
+						</ul>
 
-				<div class="header-actions">
-					<div class="header-actions-searchbar">
-						<input type="text" name="search" id="searchbar" />
+						<div class="header-actions-mobile">
+							<button
+								type="button"
+								class="header-actions-mobile-btn btn-cart"
+								aria-label="cart"
+							>
+								<i
+									class="fa-solid fa-cart-plus"
+									class="header-actions-mobile__cart-icon"
+								></i>
+							</button>
+
+							<button
+								type="button"
+								class="header-actions-mobile-btn btn-user"
+								aria-label="user"
+							>
+								<i
+									class="fa-regular fa-circle-user header-actions-mobile__user-icon"
+								></i>
+							</button>
+						</div>
+					</nav>
+
+					<div class="header-actions">
+						<div class="header-actions-searchbar">
+							<input type="text" name="search" id="searchbar" />
+							<img
+								src="./src/img/svg_icon/search.svg"
+								alt="search icon"
+								class="header-actions-icon"
+								id="searchIcon"
+							/>
+						</div>
+
 						<img
-							src="./src/img/svg_icon/search.svg"
-							alt="search icon"
+							src="./src/img/svg_icon/cart.svg"
+							alt="cart icon"
 							class="header-actions-icon"
-							id="searchIcon"
+							id="cartIcon"
 						/>
-					</div>
-
-					<img
-						src="./src/img/svg_icon/cart.svg"
-						alt="cart icon"
-						class="header-actions-icon"
-						id="cartIcon"
-					/>
-					<img
-						src="./src/img/svg_icon/user_profile.svg"
-						alt="user profile icon"
-						class="header-actions-icon"
-						id="userIcon"
-					/>
-				</div>
-			</header>
-
-			<!-- hero banner -->
-			<section class="hero-banner">
-				<div class="hero-banner-img-container">
-					<div class="hero-banner-img-wrapper">
 						<img
-							src="./src/img/Kombucha_hero-bottle.png"
-							alt=""
-							class="hero-banner-img"
+							src="./src/img/svg_icon/user_profile.svg"
+							alt="user profile icon"
+							class="header-actions-icon"
+							id="userIcon"
 						/>
 					</div>
-				</div>
-
-				<div class="hero-banner-content">
-					<div class="hero-banner-content-wrapper">
-						<div class="hero-banner-content-headers">
-							<div class="hero-banner-content-mini-headers">
-								<span class="hero-banner-content-mini-header">
-									ORGANIC TEA
-								</span>
-								<span class="hero-banner-content-mini-border"> </span>
-							</div>
-							<h1 class="hero-banner-content-header">SPARKLING. TEA <br /></h1>
-							<h2 class="hero-banner-content__header-highlighted">KOMBUCHA</h2>
-						</div>
-
-						<p class="hero-banner-content-paragraph">
-							Sparkling teas are essentially a mix of soda and tea, a cold,
-							carbonated version of the healthy classic-and health experts love
-							them. "These beverages can provide the benefits of the tea in
-							them." Says Jessica Cording, R.D.
-						</p>
-
-						<div class="hero-banner-content-actions-container">
-							<span class="hero-banner-content-price"> $89.99 </span>
-
-							<button type="button" class="primary-btn">BUY NOW</button>
-						</div>
-
-						<div class="hero-banner-content__product-category">
-							<div class="hero-banner-content__product-category__content">
-								<h4
-									class="hero-banner-content__product-category__content-header"
-								>
-									INGREDIENTS
-								</h4>
-								<p class="hero-banner-content__product-category__content-text">
-									100% Organic
-								</p>
-							</div>
-
-							<div class="hero-banner-content__product-category__content">
-								<h4
-									class="hero-banner-content__product-category__content-header"
-								>
-									FLAVORS
-								</h4>
-								<p class="hero-banner-content__product-category__content-text">
-									5 variations
-								</p>
-							</div>
-
-							<div class="hero-banner-content__product-category__content">
-								<h4
-									class="hero-banner-content__product-category__content-header"
-								>
-									Volume
-								</h4>
-								<p class="hero-banner-content__product-category__content-text">
-									465ml
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- big corps -->
-
-			<!-- <section class="big-corps">
-				<div class="big-corps__image-container">
-					<img src="./src/img/svg_icon/Afterpay.svg" alt="afterpay logo" />
-				</div>
-				<div class="big-corps__image-container">
-					<img src="./src/img/svg_icon/unicef.svg" alt="unicef logo" />
-				</div>
-
-				<div class="big-corps__image-container">
-					<img
-						src="./src/img/svg_icon/first health.svg"
-						alt="first health logo"
-					/>
-				</div>
-
-				<div class="big-corps__image-container">
-					<img
-						src="./src/img/svg_icon/interneuron.svg"
-						alt="Interneuron company logo"
-					/>
-				</div>
-
-				<div class="big-corps__image-container">
-					<img src="./src/img/svg_icon/lovato.svg" alt="lovato company logo" />
-				</div>
-			</section> -->
-
-			<!-- product authenticity -->
-
-			<section class="authenticity">
-				<article class="big-corps">
-					<div class="big-corps-container">
-						<div class="big-corps__image-container">
-							<img src="./src/img/svg_icon/Afterpay.svg" alt="afterpay logo" />
-						</div>
-						<div class="big-corps__image-container">
-							<img src="./src/img/svg_icon/unicef.svg" alt="unicef logo" />
-						</div>
-
-						<div class="big-corps__image-container">
-							<img
-								src="./src/img/svg_icon/first health.svg"
-								alt="first health logo"
-							/>
-						</div>
-
-						<div class="big-corps__image-container">
-							<img
-								src="./src/img/svg_icon/interneuron.svg"
-								alt="Interneuron company logo"
-							/>
-						</div>
-
-						<div class="big-corps__image-container">
-							<img
-								src="./src/img/svg_icon/lovato.svg"
-								alt="lovato company logo"
-							/>
-						</div>
-					</div>
-				</article>
-				<article class="authenticity-info-wrapper">
-					<h1 class="authenticity-header">100% Authentic product</h1>
-					<p class="authenticity-paragraph">
-						And producer says the ten moments parties. Simple innate summer fat
-						appear basket his desire joy.
-					</p>
-
-					<div class="authenticity-icons">
-						<div class="authenticity-icons-wrapper">
-							<div class="authenticity-icons-container">
-								<div class="authenticity-icon-wrapper">
-									<img
-										src="./src/img/svg_icon/guarantee.svg"
-										alt="Product gurantee"
-										class="authenticity-icon"
-									/>
-								</div>
-								<p class="authenticity-icon-paragraph">
-									100% Genuine <br />
-									Product Guarantee
-								</p>
-							</div>
-							<div class="authenticity-icons-container">
-								<div class="authenticity-icon-wrapper">
-									<img
-										src="./src/img/svg_icon/delivery.svg"
-										alt="Guarranted Delivery"
-										class="authenticity-icon"
-									/>
-								</div>
-
-								<p class="authenticity-icon-paragraph">
-									Guarranteed On Time <br />
-									Delivery
-								</p>
-							</div>
-							<div class="authenticity-icons-container">
-								<div class="authenticity-icon-wrapper">
-									<img
-										src="./src/img/svg_icon/money back.svg"
-										alt="Money return"
-										class="authenticity-icon"
-									/>
-								</div>
-
-								<p class="authenticity-icon-paragraph">
-									100% Return <br />
-									Guarantee & Exchange
-								</p>
-							</div>
-							<div class="authenticity-icons-container">
-								<div class="authenticity-icon-wrapper">
-									<img
-										src="./src/img/svg_icon/customer support.svg"
-										alt="customer support"
-										class="authenticity-icon"
-									/>
-								</div>
-
-								<p class="authenticity-icon-paragraph">
-									24x7 Customer <br />
-									Support
-								</p>
-							</div>
-						</div>
-
-						<!-- <article class="authenticity-text-container"></article> -->
-						<button type="button" class="primary-btn" id="authenticity-btn">
-							EXPLORE MORE
-						</button>
-					</div>
-				</article>
-			</section>
-
-			<!-- Arie Kombucha -->
-
-			<section class="arie-kombucha">
-				<h1 class="arie-kombucha-header">Arie Kombucha</h1>
-				<p class="arie-kombucha-paragraph">
-					We loved designing this entire series of lables for Singapore based
-					Arie Kombucha. The label's philosophy concerning fresh and energetic
-					ingredients was key when creating this lively and colorful universe.
-				</p>
-			</section>
-
-			<!-- product showcase -->
-
-			<section class="product-showcase-section" id="products">
-				<div class="product-showcase-container">
-					<article class="product-showcase-description">
-						<div class="product-showcase-description-headers">
-							<span class="product-showcase-description__mini-header">
-								KOMBUCHA
-							</span>
-
-							<h1 class="product-showcase-description-header">
-								Pineapple, Lychee & Hibiscus
-							</h1>
-						</div>
-						<p class="product-showcase-description-paragraph">
-							We loved designing this entire series of labels for Singapore
-							based Arie Kombucha. The label's philosophy concerning fresh and
-							energetic ingredients was key when creating this lively and
-							colorful universe.
-						</p>
-
-						<div class="product-showcase-description__btn-container">
-							<button type="button" class="primary-btn">ADD TO CART</button>
-						</div>
-					</article>
-
-					<article class="product-showcase__img-container">
-						<div class="product-showcase__img-container__content-wrapper">
-							<span
-								class="product-showcase__img-container__top-frame pineapple"
-								role="presentation"
-							>
-							</span>
-							<div class="product-showcase__img-container__img-content-wrapper">
-								<div class="product-showcase-vdo">
-									<i
-										class="fa-solid fa-play product-showcase-vdo__play-btn"
-									></i>
-									<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
-								</div>
-								<div class="product-showcase-img-wrapper">
-									<img
-										src="./src/img/Pineapple.png"
-										alt="Kombucha pineapple"
-										class="product-showcase-img"
-									/>
-								</div>
-							</div>
-							<span
-								class="product-showcase__img-container__bottom-frame pineapple"
-								role="presentation"
-							>
-							</span>
-						</div>
-					</article>
-				</div>
-
-				<div class="product-showcase-container">
-					<article class="product-showcase-description peach">
-						<div class="product-showcase-description-headers">
-							<span class="product-showcase-description__mini-header">
-								KOMBUCHA
-							</span>
-
-							<h1 class="product-showcase-description-header">
-								Peach, Mint & Lemon Balm
-							</h1>
-						</div>
-
-						<p class="product-showcase-description-paragraph">
-							We loved designing this entire series of labels for Singapore
-							based Arie Kombucha. The label's philosophy concerning fresh and
-							energetic ingredients was key when creating this lively and
-							colorful universe.
-						</p>
-
-						<div class="product-showcase-description__btn-container">
-							<button type="button" class="primary-btn">ADD TO CART</button>
-						</div>
-					</article>
-
-					<article class="product-showcase__img-container peach">
-						<div class="product-showcase__img-container__content-wrapper">
-							<span
-								class="product-showcase__img-container__top-frame peach"
-								role="presentation"
-							></span>
-
-							<div class="product-showcase__img-container__img-content-wrapper">
-								<div class="product-showcase-vdo peach">
-									<i
-										class="fa-solid fa-play product-showcase-vdo__play-btn"
-									></i>
-									<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
-								</div>
-								<div class="product-showcase-img-wrapper">
-									<img
-										src="./src/img/Peach.png"
-										alt="Kombucha pineapple"
-										class="product-showcase-img"
-									/>
-								</div>
-							</div>
-
-							<span
-								class="product-showcase__img-container__bottom-frame peach"
-								role="presentation"
-							>
-							</span>
-						</div>
-					</article>
-				</div>
-
-				<div class="product-showcase-container">
-					<article class="product-showcase-description">
-						<div class="product-showcase-description-headers">
-							<span class="product-showcase-description__mini-header">
-								KOMBUCHA
-							</span>
-
-							<h1 class="product-showcase-description-header">
-								Blackberry, Raspberry & Elder Flower
-							</h1>
-						</div>
-
-						<p class="product-showcase-description-paragraph">
-							We loved designing this entire series of labels for Singapore
-							based Arie Kombucha. The label's philosophy concerning fresh and
-							energetic ingredients was key when creating this lively and
-							colorful universe.
-						</p>
-
-						<div class="product-showcase-description__btn-container">
-							<button type="button" class="primary-btn">ADD TO CART</button>
-						</div>
-					</article>
-
-					<article class="product-showcase__img-container">
-						<div class="product-showcase__img-container__content-wrapper">
-							<span
-								class="product-showcase__img-container__top-frame blackberry"
-								role="presentation"
-							></span>
-							<div class="product-showcase__img-container__img-content-wrapper">
-								<div class="product-showcase-vdo">
-									<i
-										class="fa-solid fa-play product-showcase-vdo__play-btn"
-									></i>
-									<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
-								</div>
-								<div class="product-showcase-img-wrapper">
-									<img
-										src="./src/img/blackberry.png"
-										alt="Kombucha pineapple"
-										class="product-showcase-img"
-									/>
-								</div>
-							</div>
-
-							<span
-								class="product-showcase__img-container__bottom-frame blackberry"
-								role="presentation"
-							>
-							</span>
-						</div>
-					</article>
-				</div>
-			</section>
-
-			<!-- popular of the week -->
-
-			<section class="popular">
-				<div class="popular-header-content">
-					<h1 class="popular-heading">Popular This Week</h1>
-					<div class="popular-navigation-number">
-						<span class="popular-nav-number">01</span>
-						<span class="popular-nav-number__border"> </span>
-						<span class="popular-nav-number">02</span>
-						<span class="popular-nav-number__border"> </span>
-						<span class="popular-nav-number">03</span>
-						<span class="popular-nav-number__border"> </span>
-						<span class="popular-nav-number">04</span>
-						<span class="popular-nav-number__border"> </span>
-					</div>
-				</div>
-
-				<div class="popular-cards">
-					<section class="popular-cards__slider">
-						<aritcle class="popular-card">
-							<div class="popular-card-description-container">
-								<h2 class="popular-card-header">
-									PINEAPPLE, LYCHEE & HIBISCUS
-								</h2>
-
-								<p class="popular-card-paragraph">
-									We loved designing this entire series of labels for Singapore
-									based Arie Kombucha.
-								</p>
-
-								<button type="button" class="primary-btn">BUY NOW</button>
-							</div>
-							<div class="popular-card-img-container">
-								<img src="./src/img/Pineapple.png" alt="kombucha Pineapple" />
-							</div>
-						</aritcle>
-						<aritcle class="popular-card">
-							<div class="popular-card-description-container">
-								<h2 class="popular-card-header">PEACH,MINT & LEMON BALM</h2>
-
-								<p class="popular-card-paragraph">
-									We loved designing this entire series of labels for Singapore
-									based Arie Kombucha.
-								</p>
-
-								<button type="button" class="primary-btn">BUY NOW</button>
-							</div>
-							<div class="popular-card-img-container">
-								<img
-									src="./src/img/Peach.png"
-									alt="kombucha peach,mint and lemon"
-								/>
-							</div>
-						</aritcle>
-						<aritcle class="popular-card">
-							<div class="popular-card-description-container">
-								<h2 class="popular-card-header">
-									Blackberry, Raspberry & Elder Flower
-								</h2>
-
-								<p class="popular-card-paragraph">
-									We loved designing this entire series of labels for Singapore
-									based Arie Kombucha.
-								</p>
-
-								<button type="button" class="primary-btn">BUY NOW</button>
-							</div>
-							<div class="popular-card-img-container">
-								<img
-									src="./src/img/blackberry.png"
-									alt="kombucha blackberry, raspberry and elder flower"
-								/>
-							</div>
-						</aritcle>
-						<aritcle class="popular-card">
-							<div class="popular-card-description-container">
-								<h2 class="popular-card-header">
-									Passionfruit, Jasmine & Osmanthus
-								</h2>
-
-								<p class="popular-card-paragraph">
-									We loved designing this entire series of labels for Singapore
-									based Arie Kombucha.
-								</p>
-
-								<button type="button" class="primary-btn">BUY NOW</button>
-							</div>
-							<div class="popular-card-img-container">
-								<img
-									src="./src/img/Passionfruit.png"
-									alt="kombucha Passionfruit, Jasmine and Osmanthus"
-								/>
-							</div>
-						</aritcle>
-					</section>
-				</div>
-
-				<div class="chevron-container-popular">
-					<i class="fas fa-chevron-left" id="popular-btn-left"></i>
-					<i class="fas fa-chevron-right" id="popular-btn-right"></i>
-				</div>
-			</section>
-
-			<!-- chart section -->
-
-			<section class="chart">
-				<div class="chart-wrapper">
-					<div class="chart-chart">
-						<img src="./src/img/svg_icon/chart.svg" alt="chart" />
-					</div>
-
-					<div class="chart-number">
-						<h1 class="chart-number-number">56</h1>
-						<p class="chart-paragraph">Countries Supported</p>
-					</div>
-
-					<div class="chart-number">
-						<h1 class="chart-number-number">122+</h1>
-						<p class="chart-paragraph">International Branches</p>
-					</div>
-
-					<div class="chart-number">
-						<h1 class="chart-number-number">1M+</h1>
-						<p class="chart-paragraph">Sales through-out the world</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Testimonial -->
-
-			<section class="testimonial">
-				<header class="testimonial-header">
-					<h1 class="testimonial-header-header">Testimonials</h1>
-
-					<p class="testimonial-sub-header">
-						What our valuable customers say about Kombucha
-					</p>
 				</header>
 
-				<div class="testimonial-cards">
-					<div class="testimonial-cards_slide1">
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img dinesh"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<span class="testimonial-card-name"> Dinesh </span>
-							</div>
-
-							<p class="testimonial-card-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-								vel maiores optio adipisci obcaecati earum! Aliquid cumque ea
-								magni pariatur.
-							</p>
-						</div>
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img erlich"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<span class="testimonial-card-name"> Erlich Bachman </span>
-							</div>
-
-							<p class="testimonial-card-paragraph">
-								The taste of hic nobis maiores suscipit dolorum ipsa laudantium
-								quo. Temporibus aperiam vel, fugit rem explicabo voluptatem
-								cumque sequi? sapiente iure unbelievably excellent!
-							</p>
-						</div>
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img jinyang"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<span class="testimonial-card-name">Jin Yang </span>
-							</div>
-
-							<p class="testimonial-card-paragraph">
-								You can feel the chin yang with each sip voluptatem cumque
-								sequi? Facilis error quos dolores, odit placeat sapiente iure
-								unbelievably excellent!
-							</p>
+				<!-- hero banner -->
+				<section class="hero-banner">
+					<div class="hero-banner-img-container">
+						<div class="hero-banner-img-wrapper">
+							<img
+								src="./src/img/Kombucha_hero-bottle.png"
+								alt=""
+								class="hero-banner-img"
+							/>
 						</div>
 					</div>
 
-					<div class="testimonial-cards_slide2">
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img monica"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
+					<div class="hero-banner-content">
+						<div class="hero-banner-content-wrapper">
+							<div class="hero-banner-content-headers">
+								<div class="hero-banner-content-mini-headers">
+									<span class="hero-banner-content-mini-header">
+										ORGANIC TEA
+									</span>
+									<span class="hero-banner-content-mini-border"> </span>
 								</div>
-								<span class="testimonial-card-name">Monica </span>
+								<h1 class="hero-banner-content-header">SPARKLING.TEA <br /></h1>
+								<h2 class="hero-banner-content__header-highlighted">
+									KOMBUCHA
+								</h2>
 							</div>
 
-							<p class="testimonial-card-paragraph">
-								Enhances the capability to come up with random dummy jargon text
-								that makes sense only when the soothing essence slide down the
-								jargon throat.
+							<p class="hero-banner-content-paragraph">
+								Sparkling teas are essentially a mix of soda and tea, a cold,
+								carbonated version of the healthy classic-and health experts
+								love them. "These beverages can provide the benefits of the tea
+								in them." Says Jessica Cording, R.D.
 							</p>
-						</div>
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img jill"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<span class="testimonial-card-name">Jill Foyel</span>
+
+							<div class="hero-banner-content-actions-container">
+								<span class="hero-banner-content-price"> $89.99 </span>
+
+								<button type="button" class="primary-btn">BUY NOW</button>
 							</div>
 
-							<p class="testimonial-card-paragraph">
-								The strong taste of pineapple make the summer more better and
-								makes it feel aligned with satanism and much better than hooli
-								teas.
-							</p>
-						</div>
-						<div class="testimonial-card">
-							<div class="testimonial-card-quote-img__wrapper">
-								<img src="./src/img/svg_icon/quote.png" alt="quote image" />
-							</div>
-							<div class="testimonial-card-img-stars">
-								<span class="testimonial-card-img richard"></span>
-								<div class="testimonial-stars">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
+							<div class="hero-banner-content__product-category">
+								<div class="hero-banner-content__product-category__content">
+									<h4
+										class="hero-banner-content__product-category__content-header"
+									>
+										INGREDIENTS
+									</h4>
+									<p
+										class="hero-banner-content__product-category__content-text"
+									>
+										100% Organic
+									</p>
 								</div>
-								<span class="testimonial-card-name">Richard</span>
-							</div>
 
-							<p class="testimonial-card-paragraph">
-								Extraordinary taste of ipsum dolor sit amet consectetur
-								adipisicing elit. Obcaecati, minima fugit quos itaque voluptas
-								ex culpa omnis aut repellendus impending doom.
-							</p>
+								<div class="hero-banner-content__product-category__content">
+									<h4
+										class="hero-banner-content__product-category__content-header"
+									>
+										FLAVORS
+									</h4>
+									<p
+										class="hero-banner-content__product-category__content-text"
+									>
+										5 variations
+									</p>
+								</div>
+
+								<div class="hero-banner-content__product-category__content">
+									<h4
+										class="hero-banner-content__product-category__content-header"
+									>
+										Volume
+									</h4>
+									<p
+										class="hero-banner-content__product-category__content-text"
+									>
+										465ml
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<!-- chevron container -->
-				<div class="chevron-container testimonial-btns">
-					<i class="fas fa-chevron-left" id="testimonial-btn-left"></i>
-					<i class="fas fa-chevron-right" id="testimonial-btn-right"></i>
-				</div>
-			</section>
+				<!-- product authenticity -->
 
-			<!-- footer -->
+				<section class="authenticity">
+					<article class="authenticity-big-corps">
+						<div class="authenticity-big-corps-container">
+							<div class="authenticity-big-corps__image-container">
+								<img
+									src="./src/img/svg_icon/Afterpay.svg"
+									alt="afterpay logo"
+								/>
+							</div>
+							<div class="authenticity-big-corps__image-container">
+								<img src="./src/img/svg_icon/unicef.svg" alt="unicef logo" />
+							</div>
 
-			<footer class="footer-container">
-				<div class="footer">
-					<section class="footer-general">
-						<div class="footer-general-content">
-							<h3 class="footer-general-header">KOMBUCHA</h3>
-							<p class="footer-general-paragraph">
-								Sufficient particular impossible by reasonable oh expression is
-								Yet preference unpleasant.
-							</p>
+							<div class="authenticity-big-corps__image-container">
+								<img
+									src="./src/img/svg_icon/first health.svg"
+									alt="first health logo"
+								/>
+							</div>
 
-							<div class="footer-general-social-media">
-								<div class="footer-general-social-media-wrapper">
-									<a href="#">
-										<i class="fab fa-facebook"></i>
-									</a>
-									<a href="#">
-										<i class="fab fa-twitter"></i>
-									</a>
+							<div class="authenticity-big-corps__image-container">
+								<img
+									src="./src/img/svg_icon/interneuron.svg"
+									alt="Interneuron company logo"
+								/>
+							</div>
 
-									<a href="#">
-										<i class="fab fa-instagram"></i>
-									</a>
+							<div class="authenticity-big-corps__image-container">
+								<img
+									src="./src/img/svg_icon/lovato.svg"
+									alt="lovato company logo"
+								/>
+							</div>
+						</div>
+					</article>
+					<article class="authenticity-info-wrapper">
+						<h1 class="authenticity-header">100% Authentic product</h1>
+						<p class="authenticity-paragraph">
+							And producer says the ten moments parties. Simple innate summer
+							fat appear basket his desire joy.
+						</p>
+
+						<div class="authenticity-icons">
+							<div class="authenticity-icons-wrapper">
+								<div class="authenticity-icons-container">
+									<div class="authenticity-icon-wrapper">
+										<img
+											src="./src/img/svg_icon/guarantee.svg"
+											alt="Product gurantee"
+											class="authenticity-icon"
+										/>
+									</div>
+									<p class="authenticity-icon-paragraph">
+										100% Genuine <br />
+										Product Guarantee
+									</p>
+								</div>
+								<div class="authenticity-icons-container">
+									<div class="authenticity-icon-wrapper">
+										<img
+											src="./src/img/svg_icon/delivery.svg"
+											alt="Guarranted Delivery"
+											class="authenticity-icon"
+										/>
+									</div>
+
+									<p class="authenticity-icon-paragraph">
+										Guarranteed On Time <br />
+										Delivery
+									</p>
+								</div>
+								<div class="authenticity-icons-container">
+									<div class="authenticity-icon-wrapper">
+										<img
+											src="./src/img/svg_icon/money back.svg"
+											alt="Money return"
+											class="authenticity-icon"
+										/>
+									</div>
+
+									<p class="authenticity-icon-paragraph">
+										100% Return <br />
+										Guarantee & Exchange
+									</p>
+								</div>
+								<div class="authenticity-icons-container">
+									<div class="authenticity-icon-wrapper">
+										<img
+											src="./src/img/svg_icon/customer support.svg"
+											alt="customer support"
+											class="authenticity-icon"
+										/>
+									</div>
+
+									<p class="authenticity-icon-paragraph">
+										24x7 Customer <br />
+										Support
+									</p>
 								</div>
 							</div>
+
+							<!-- <article class="authenticity-text-container"></article> -->
+							<button type="button" class="primary-btn" id="authenticity-btn">
+								EXPLORE MORE
+							</button>
 						</div>
-					</section>
+					</article>
+				</section>
 
-					<section class="footer-links">
-						<div class="footer-links-container">
-							<div class="footer-links-content">
-								<h4 class="footer-links-header">Menu</h4>
-								<ul class="footer-links-links">
-									<li class="footer-links-links__link">
-										<a href="#">Donations</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#">Features</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#">Category</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#"> Volunteer </a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#"> About Us </a>
-									</li>
-								</ul>
+				<!-- Arie Kombucha -->
+
+				<section class="arie-kombucha">
+					<h1 class="arie-kombucha-header">Arie Kombucha</h1>
+					<p class="arie-kombucha-paragraph">
+						We loved designing this entire series of lables for Singapore based
+						Arie Kombucha. The label's philosophy concerning fresh and energetic
+						ingredients was key when creating this lively and colorful universe.
+					</p>
+				</section>
+
+				<!-- product showcase -->
+
+				<section class="product-showcase-section" id="products">
+					<div class="product-showcase-container">
+						<article class="product-showcase-description">
+							<div class="product-showcase-description-headers">
+								<span class="product-showcase-description__mini-header">
+									KOMBUCHA
+								</span>
+
+								<h1 class="product-showcase-description-header">
+									Pineapple, Lychee & Hibiscus
+								</h1>
+							</div>
+							<p class="product-showcase-description-paragraph">
+								We loved designing this entire series of labels for Singapore
+								based Arie Kombucha. The label's philosophy concerning fresh and
+								energetic ingredients was key when creating this lively and
+								colorful universe.
+							</p>
+
+							<div class="product-showcase-description__btn-container">
+								<button type="button" class="primary-btn">ADD TO CART</button>
+							</div>
+						</article>
+
+						<article class="product-showcase__img-container">
+							<div class="product-showcase__img-container__content-wrapper">
+								<span
+									class="product-showcase__img-container__top-frame pineapple"
+									role="presentation"
+								>
+								</span>
+								<div
+									class="product-showcase__img-container__img-content-wrapper"
+								>
+									<div class="product-showcase-vdo">
+										<i
+											class="fa-solid fa-play product-showcase-vdo__play-btn"
+										></i>
+										<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
+									</div>
+									<div class="product-showcase-img-wrapper">
+										<img
+											src="./src/img/Pineapple.png"
+											alt="Kombucha pineapple"
+											class="product-showcase-img"
+										/>
+									</div>
+								</div>
+								<span
+									class="product-showcase__img-container__bottom-frame pineapple"
+									role="presentation"
+								>
+								</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="product-showcase-container">
+						<article class="product-showcase-description peach">
+							<div class="product-showcase-description-headers">
+								<span class="product-showcase-description__mini-header">
+									KOMBUCHA
+								</span>
+
+								<h1 class="product-showcase-description-header">
+									Peach, Mint & Lemon Balm
+								</h1>
 							</div>
 
-							<div class="footer-links-content">
-								<h4 class="footer-links-header">Categories</h4>
-								<ul class="footer-links-links">
-									<li class="footer-links-links__link">
-										<a href="#">Healthy Food</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#">Education</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#">Clean Water</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#"> Medical Help </a>
-									</li>
-								</ul>
+							<p class="product-showcase-description-paragraph">
+								We loved designing this entire series of labels for Singapore
+								based Arie Kombucha. The label's philosophy concerning fresh and
+								energetic ingredients was key when creating this lively and
+								colorful universe.
+							</p>
+
+							<div class="product-showcase-description__btn-container">
+								<button type="button" class="primary-btn">ADD TO CART</button>
+							</div>
+						</article>
+
+						<article class="product-showcase__img-container peach">
+							<div class="product-showcase__img-container__content-wrapper">
+								<span
+									class="product-showcase__img-container__top-frame peach"
+									role="presentation"
+								></span>
+
+								<div
+									class="product-showcase__img-container__img-content-wrapper"
+								>
+									<div class="product-showcase-vdo peach">
+										<i
+											class="fa-solid fa-play product-showcase-vdo__play-btn"
+										></i>
+										<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
+									</div>
+									<div class="product-showcase-img-wrapper">
+										<img
+											src="./src/img/Peach.png"
+											alt="Kombucha pineapple"
+											class="product-showcase-img"
+										/>
+									</div>
+								</div>
+
+								<span
+									class="product-showcase__img-container__bottom-frame peach"
+									role="presentation"
+								>
+								</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="product-showcase-container">
+						<article class="product-showcase-description">
+							<div class="product-showcase-description-headers">
+								<span class="product-showcase-description__mini-header">
+									KOMBUCHA
+								</span>
+
+								<h1 class="product-showcase-description-header">
+									Blackberry, Raspberry & Elder Flower
+								</h1>
 							</div>
 
-							<div class="footer-links-content-">
-								<h4 class="footer-links-header">About Us</h4>
-								<ul class="footer-links-links">
-									<li class="footer-links-links__link">
-										<a href="#">Who are we?</a>
-									</li>
-									<li class="footer-links-links__link">
-										<a href="#">Contact Us</a>
-									</li>
-									<li class="footer-links-links__link"><a href="#">FAQ</a></li>
-									<li class="footer-links-links__link">
-										<a href="#"> help</a>
-									</li>
-								</ul>
+							<p class="product-showcase-description-paragraph">
+								We loved designing this entire series of labels for Singapore
+								based Arie Kombucha. The label's philosophy concerning fresh and
+								energetic ingredients was key when creating this lively and
+								colorful universe.
+							</p>
+
+							<div class="product-showcase-description__btn-container">
+								<button type="button" class="primary-btn">ADD TO CART</button>
+							</div>
+						</article>
+
+						<article class="product-showcase__img-container">
+							<div class="product-showcase__img-container__content-wrapper">
+								<span
+									class="product-showcase__img-container__top-frame blackberry"
+									role="presentation"
+								></span>
+								<div
+									class="product-showcase__img-container__img-content-wrapper"
+								>
+									<div class="product-showcase-vdo">
+										<i
+											class="fa-solid fa-play product-showcase-vdo__play-btn"
+										></i>
+										<span class="product-showcase-vdo-text"> WATCH VIDEO </span>
+									</div>
+									<div class="product-showcase-img-wrapper">
+										<img
+											src="./src/img/blackberry.png"
+											alt="Kombucha pineapple"
+											class="product-showcase-img"
+										/>
+									</div>
+								</div>
+
+								<span
+									class="product-showcase__img-container__bottom-frame blackberry"
+									role="presentation"
+								>
+								</span>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- popular of the week -->
+
+				<section class="popular">
+					<div class="popular-header-content">
+						<h1 class="popular-heading">Popular This Week</h1>
+						<div class="popular-navigation-number">
+							<span class="popular-nav-number">01</span>
+							<span class="popular-nav-number__border"> </span>
+							<span class="popular-nav-number">02</span>
+							<span class="popular-nav-number__border"> </span>
+							<span class="popular-nav-number">03</span>
+							<span class="popular-nav-number__border"> </span>
+							<span class="popular-nav-number">04</span>
+							<span class="popular-nav-number__border"> </span>
+						</div>
+					</div>
+
+					<div class="popular-cards">
+						<section class="popular-cards__slider">
+							<aritcle class="popular-card">
+								<div class="popular-card-description-container">
+									<h2 class="popular-card-header">
+										PINEAPPLE, LYCHEE & HIBISCUS
+									</h2>
+
+									<p class="popular-card-paragraph">
+										We loved designing this entire series of labels for
+										Singapore based Arie Kombucha.
+									</p>
+
+									<button type="button" class="primary-btn">BUY NOW</button>
+								</div>
+								<div class="popular-card-img-container">
+									<img src="./src/img/Pineapple.png" alt="kombucha Pineapple" />
+								</div>
+							</aritcle>
+							<aritcle class="popular-card">
+								<div class="popular-card-description-container">
+									<h2 class="popular-card-header">PEACH,MINT & LEMON BALM</h2>
+
+									<p class="popular-card-paragraph">
+										We loved designing this entire series of labels for
+										Singapore based Arie Kombucha.
+									</p>
+
+									<button type="button" class="primary-btn">BUY NOW</button>
+								</div>
+								<div class="popular-card-img-container">
+									<img
+										src="./src/img/Peach.png"
+										alt="kombucha peach,mint and lemon"
+									/>
+								</div>
+							</aritcle>
+							<aritcle class="popular-card">
+								<div class="popular-card-description-container">
+									<h2 class="popular-card-header">
+										Blackberry, Raspberry & Elder Flower
+									</h2>
+
+									<p class="popular-card-paragraph">
+										We loved designing this entire series of labels for
+										Singapore based Arie Kombucha.
+									</p>
+
+									<button type="button" class="primary-btn">BUY NOW</button>
+								</div>
+								<div class="popular-card-img-container">
+									<img
+										src="./src/img/blackberry.png"
+										alt="kombucha blackberry, raspberry and elder flower"
+									/>
+								</div>
+							</aritcle>
+							<aritcle class="popular-card">
+								<div class="popular-card-description-container">
+									<h2 class="popular-card-header">
+										Passionfruit, Jasmine & Osmanthus
+									</h2>
+
+									<p class="popular-card-paragraph">
+										We loved designing this entire series of labels for
+										Singapore based Arie Kombucha.
+									</p>
+
+									<button type="button" class="primary-btn">BUY NOW</button>
+								</div>
+								<div class="popular-card-img-container">
+									<img
+										src="./src/img/Passionfruit.png"
+										alt="kombucha Passionfruit, Jasmine and Osmanthus"
+									/>
+								</div>
+							</aritcle>
+						</section>
+					</div>
+
+					<div class="chevron-container-popular">
+						<i class="fas fa-chevron-left" id="popular-btn-left"></i>
+						<i class="fas fa-chevron-right" id="popular-btn-right"></i>
+					</div>
+				</section>
+
+				<!-- chart section -->
+
+				<section class="chart">
+					<div class="chart-wrapper">
+						<div class="chart-chart">
+							<img src="./src/img/svg_icon/chart.svg" alt="chart" />
+						</div>
+
+						<div class="chart-number">
+							<h1 class="chart-number-number">56</h1>
+							<p class="chart-paragraph">Countries Supported</p>
+						</div>
+
+						<div class="chart-number">
+							<h1 class="chart-number-number">122+</h1>
+							<p class="chart-paragraph">International Branches</p>
+						</div>
+
+						<div class="chart-number">
+							<h1 class="chart-number-number">1M+</h1>
+							<p class="chart-paragraph">Sales through-out the world</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Testimonial -->
+
+				<section class="testimonial">
+					<header class="testimonial-header">
+						<h1 class="testimonial-header-header">Testimonials</h1>
+
+						<p class="testimonial-sub-header">
+							What our valuable customers say about Kombucha
+						</p>
+					</header>
+
+					<div class="testimonial-cards">
+						<div class="testimonial-cards_slide1">
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img dinesh"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name"> Dinesh </span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+									vel maiores optio adipisci obcaecati earum! Aliquid cumque ea
+									magni pariatur.
+								</p>
+							</div>
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img erlich"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name"> Erlich Bachman </span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									The taste of hic nobis maiores suscipit dolorum ipsa
+									laudantium quo. Temporibus aperiam vel, fugit rem explicabo
+									voluptatem cumque sequi? sapiente iure unbelievably excellent!
+								</p>
+							</div>
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img jinyang"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name">Jin Yang </span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									You can feel the chin yang with each sip voluptatem cumque
+									sequi? Facilis error quos dolores, odit placeat sapiente iure
+									unbelievably excellent!
+								</p>
 							</div>
 						</div>
-					</section>
-				</div>
-				<p class="footer-copyright">
-					<span class="footer-copyright-symbol"> &#169; </span>Copyright
-					Kambucha. All rights reserved.
-				</p>
-			</footer>
+
+						<div class="testimonial-cards_slide2">
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img monica"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name">Monica </span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									Enhances the capability to come up with random dummy jargon
+									text that makes sense only when the soothing essence slide
+									down the jargon throat.
+								</p>
+							</div>
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img jill"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name">Jill Foyel</span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									The strong taste of pineapple make the summer more better and
+									makes it feel aligned with satanism and much better than hooli
+									teas.
+								</p>
+							</div>
+							<div class="testimonial-card">
+								<div class="testimonial-card-quote-img__wrapper">
+									<img src="./src/img/svg_icon/quote.png" alt="quote image" />
+								</div>
+								<div class="testimonial-card-img-stars">
+									<span class="testimonial-card-img richard"></span>
+									<div class="testimonial-stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									<span class="testimonial-card-name">Richard</span>
+								</div>
+
+								<p class="testimonial-card-paragraph">
+									Extraordinary taste of ipsum dolor sit amet consectetur
+									adipisicing elit. Obcaecati, minima fugit quos itaque voluptas
+									ex culpa omnis aut repellendus impending doom.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- chevron container -->
+					<div class="chevron-container testimonial-btns">
+						<i class="fas fa-chevron-left" id="testimonial-btn-left"></i>
+						<i class="fas fa-chevron-right" id="testimonial-btn-right"></i>
+					</div>
+				</section>
+
+				<!-- footer -->
+
+				<footer class="footer-container">
+					<div class="footer">
+						<section class="footer-general">
+							<div class="footer-general-content">
+								<h3 class="footer-general-header">KOMBUCHA</h3>
+								<p class="footer-general-paragraph">
+									Sufficient particular impossible by reasonable oh expression
+									is Yet preference unpleasant.
+								</p>
+
+								<div class="footer-general-social-media">
+									<div class="footer-general-social-media-wrapper">
+										<a href="#">
+											<i class="fab fa-facebook"></i>
+										</a>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+
+										<a href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="footer-links">
+							<div class="footer-links-container">
+								<div class="footer-links-content">
+									<h4 class="footer-links-header">Menu</h4>
+									<ul class="footer-links-links">
+										<li class="footer-links-links__link">
+											<a href="#">Donations</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">Features</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">Category</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#"> Volunteer </a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#"> About Us </a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="footer-links-content">
+									<h4 class="footer-links-header">Categories</h4>
+									<ul class="footer-links-links">
+										<li class="footer-links-links__link">
+											<a href="#">Healthy Food</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">Education</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">Clean Water</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#"> Medical Help </a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="footer-links-content-">
+									<h4 class="footer-links-header">About Us</h4>
+									<ul class="footer-links-links">
+										<li class="footer-links-links__link">
+											<a href="#">Who are we?</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">Contact Us</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#">FAQ</a>
+										</li>
+										<li class="footer-links-links__link">
+											<a href="#"> help</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</div>
+					<p class="footer-copyright">
+						<span class="footer-copyright-symbol"> &#169; </span>Copyright
+						Kambucha. All rights reserved.
+					</p>
+				</footer>
+			</div>
 		</main>
 	</body>
 </html>

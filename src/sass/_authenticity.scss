@@ -1,26 +1,5 @@
 @use './helper-fontSizes' as fontSizes;
 
-.big-corps {
-	@include tertiaryBGColor;
-	@include flex;
-	margin-top: 2rem;
-	&-container {
-		@include flex;
-		justify-content: space-between;
-		padding: 2rem;
-		// transition: transform 0.5s ease-in-out;
-		animation: slideAnimation 40s linear infinite;
-	}
-
-	&__image-container {
-		padding: 1rem;
-		& > img {
-			width: 7rem;
-			padding: 0 1rem;
-		}
-	}
-}
-
 @keyframes slideAnimation {
 	0% {
 		transform: translateX(0);
@@ -34,9 +13,25 @@
 }
 
 .authenticity {
-	// @include borderTest;
-	// background: #303030;
-	// padding: 1.2rem;
+	&-big-corps {
+		@include tertiaryBGColor;
+		@include flex;
+		margin-top: 2rem;
+		&-container {
+			@include flex;
+			justify-content: space-between;
+			padding: 2rem;
+			animation: slideAnimation 40s linear infinite;
+		}
+
+		&__image-container {
+			padding: 1rem;
+			& > img {
+				width: 7rem;
+				padding: 0 1rem;
+			}
+		}
+	}
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;

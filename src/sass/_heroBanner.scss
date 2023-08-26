@@ -24,7 +24,7 @@
 
 	&-content {
 		z-index: 20;
-		@include borderTest;
+		// @include borderTest;
 		@include flexFunc(column, flex-start, null);
 		margin-top: 5rem;
 		padding: 1rem;
@@ -75,12 +75,12 @@
 		&-price {
 			font-size: 1.4rem;
 			font-weight: bold;
-			border-bottom: 1px solid rgb(165, 165, 165);
+			border-bottom: 1px solid rgb(144, 144, 144);
 
 			text-align: center;
 			width: 6rem;
 			display: inline-block;
-			padding: 0.4rem 0;
+			padding: 0.8rem 0;
 			margin: 0.8rem 0 0.2rem;
 			@include fontLato;
 		}
@@ -90,7 +90,7 @@
 			@include flex;
 			justify-content: space-between;
 
-			margin-top: 2rem;
+			margin-top: 4rem;
 
 			&__content-header {
 				@include fontSizes.xs;
