@@ -209,9 +209,18 @@
 }
 
 .authenticity {
-	@include breakpoint.respond-to(sm-tablet) {
+	@include breakpoint.respond-to(lg-mobile) {
 		&-big-corps__image-container > img {
 			width: 10rem;
+		}
+
+		&-info-wrapper {
+			padding: 0 3rem;
+		}
+
+		&-paragraph {
+			// @include borderTest;
+			width: 28rem;
 		}
 	}
 
@@ -220,6 +229,12 @@
 			&-container {
 				animation: none;
 			}
+		}
+	}
+
+	@include breakpoint.respond-to(lg-tablet-XL) {
+		&-paragraph {
+			@include fontSizes.lg;
 		}
 	}
 }

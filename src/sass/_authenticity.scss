@@ -17,6 +17,7 @@
 		@include tertiaryBGColor;
 		@include flex;
 		margin-top: 2rem;
+
 		&-container {
 			@include flex;
 			width: 100%;
@@ -33,18 +34,25 @@
 			}
 		}
 	}
+
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 6rem;
 
+	&-header-container {
+		@include borderTest;
+		@include flexFunc(column, center, center);
+	}
+
 	&-info-wrapper {
-		margin-top: 2rem;
+		margin-top: 6rem;
 	}
 
 	&-paragraph {
 		padding: 1.2rem 0;
 		@include fontSizes.lg;
+		@include borderTest;
 	}
 
 	&-icons {
