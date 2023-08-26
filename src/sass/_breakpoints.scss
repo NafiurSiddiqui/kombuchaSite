@@ -20,23 +20,6 @@
 		}
 	}
 
-	// @include breakpoint.respond-to() {
-	// }
-
-	// @media screen and (min-width: 580px) {
-	// 	&-content {
-	// 		width: 56%;
-	// 	}
-	// 	&-img {
-	// 		&-wrapper {
-	// 			left: -18rem;
-	// 			> img {
-	// 				width: 46rem;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
 	@include breakpoint.respond-to(sm-tablet) {
 		&-content {
 			width: 56%;
@@ -50,21 +33,6 @@
 			}
 		}
 	}
-
-	// @media screen and (min-width: 780px) {
-	// 	&-content {
-	// 		width: 30rem;
-	// 	}
-	// 	&-img {
-	// 		&-wrapper {
-	// 			left: -36vw;
-
-	// 			> img {
-	// 				width: 50rem;
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	@include breakpoint.respond-to(lg-tablet) {
 		&-content {
@@ -80,37 +48,6 @@
 			}
 		}
 	}
-
-	// @media screen and (min-width: 880px) {
-	// 	&-content {
-	// 		top: 8rem;
-	// 		right: 2%;
-	// 		&-mini-header {
-	// 			font-size: large;
-	// 		}
-
-	// 		&-headers {
-	// 			> h1 {
-	// 				@include fontSizes.xl5;
-	// 			}
-	// 			> h2 {
-	// 				@include fontSizes.xl4;
-	// 			}
-	// 		}
-	// 	}
-	// 	&-img {
-	// 		&-container {
-	// 			width: 50rem;
-	// 		}
-	// 		&-wrapper {
-	// 			left: -15rem;
-	// 			opacity: 0.9;
-	// 			> img {
-	// 				width: 100%;
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	@include breakpoint.respond-to(lg-tablet-XL) {
 		&-content {
@@ -142,78 +79,6 @@
 			}
 		}
 	}
-
-	// @media screen and (min-width: 1000px) {
-	// 	margin-top: 2rem;
-	// 	height: 100vh;
-	// 	align-items: center;
-	// 	&-content {
-	// 		width: 48vw;
-	// 		padding: 0;
-	// 		height: 90%;
-	// 		@include flexFunc(null, center, center);
-	// 		position: static;
-	// 		margin: 0;
-	// 		&-wrapper {
-	// 			height: 100%;
-	// 		}
-	// 		&-mini-headers {
-	// 			@include fontSizes.xl;
-	// 			margin-bottom: 0.8rem;
-	// 		}
-
-	// 		&-headers {
-	// 			align-items: flex-start;
-	// 			line-height: 1.8rem;
-	// 			> h1 {
-	// 				@include fontSizes.xl7;
-	// 				margin-bottom: 0.4rem;
-	// 			}
-	// 			> h2 {
-	// 				@include fontSizes.xl5;
-	// 			}
-	// 		}
-
-	// 		&-paragraph {
-	// 			margin: 2rem 0;
-
-	// 			@include fontSizes.lg;
-	// 			text-align: left;
-	// 			width: 80%;
-	// 		}
-	// 		&-actions-container {
-	// 			align-items: flex-start;
-	// 		}
-
-	// 		&__product-category {
-	// 			width: 80%;
-	// 			&__content {
-	// 				&-header {
-	// 					//
-	// 				}
-
-	// 				&-text {
-	// 					@include fontSizes.lg;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// 	&-img {
-	// 		&-container {
-	// 			width: 46vw;
-	// 			height: 100%;
-	// 		}
-	// 		&-wrapper {
-	// 			position: static;
-	// 			height: 100%;
-	// 			> img {
-	// 				width: 100%;
-	// 				height: 100%;
-	// 				object-fit: cover;
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	@include breakpoint.respond-to(sm-desktop) {
 		margin-top: 2rem;
@@ -287,14 +152,6 @@
 		}
 	}
 
-	// @media screen and (min-width: 1300px) {
-	// 	&-img {
-	// 		&-container {
-	// 			width: 40vw;
-	// 		}
-	// 	}
-	// }
-
 	@include breakpoint.respond-to(md-desktop) {
 		&-img {
 			&-container {
@@ -302,53 +159,6 @@
 			}
 		}
 	}
-
-	// @media screen and (min-width: 1500px) {
-	// 	main.container {
-	// 		@include flexFunc(row, center, center);
-	// 	}
-	// 	div.container-wrapper {
-	// 		width: 80%;
-	// 	}
-	// 	&-content {
-	// 		width: 48vw;
-	// 		padding: 0;
-	// 		height: 90%;
-	// 		@include flexFunc(null, center, center);
-	// 		position: static;
-	// 		margin: 0;
-	// 		&-wrapper {
-	// 			// width: 70%;
-	// 			height: 100%;
-	// 		}
-	// 		&-mini-headers {
-	// 			@include fontSizes.xl;
-	// 			margin-bottom: 0.8rem;
-	// 		}
-
-	// 		&-paragraph {
-	// 			@include fontSizes.xl;
-	// 		}
-
-	// 		&__product-category {
-	// 			width: 80%;
-	// 			&__content {
-	// 				&-header {
-	// 					//
-	// 				}
-
-	// 				&-text {
-	// 					@include fontSizes.lg;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// 	&-img {
-	// 		&-container {
-	// 			width: 40vw;
-	// 		}
-	// 	}
-	// }
 
 	@include breakpoint.respond-to(lg-desktop) {
 		main.container {
@@ -399,6 +209,19 @@
 }
 
 .authenticity {
+	@include breakpoint.respond-to(sm-tablet) {
+		&-big-corps__image-container > img {
+			width: 10rem;
+		}
+	}
+
+	@include breakpoint.respond-to(sm-tablet) {
+		&-big-corps {
+			&-container {
+				animation: none;
+			}
+		}
+	}
 }
 
 // .product-showcase {

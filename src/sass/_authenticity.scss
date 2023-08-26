@@ -19,8 +19,9 @@
 		margin-top: 2rem;
 		&-container {
 			@include flex;
+			width: 100%;
 			justify-content: space-between;
-			padding: 4rem 2rem;
+			padding: 3rem 2rem;
 			animation: slideAnimation 40s linear infinite;
 		}
 
@@ -47,8 +48,6 @@
 	}
 
 	&-icons {
-		// @include borderTest;
-
 		&-wrapper {
 			@include flexFunc(column, center, center);
 			justify-content: space-between;
