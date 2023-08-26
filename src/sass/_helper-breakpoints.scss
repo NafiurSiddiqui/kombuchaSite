@@ -1,31 +1,21 @@
 $breakpoints: (
-	'small-ios': 320px,
-	'medium-ios': 375px,
-	'large-ios': 414px,
-	'small-tablet': 600px,
-	'large-tablet': 768px,
-	'large-tablet-XL': 880px,
-	'desktop': 1024px,
-	'mid-desktop': 1300px,
-	'large-desktop': 1440px,
+	'sm-mobile': 320px,
+	'md-mobile': 375px,
+	'large-mobile': 480px,
+	'sm-tablet': 580px,
+	'lg-tablet': 780px,
+	'lg-tablet-XL': 880px,
+	'sm-desktop': 1000px,
+	'md-desktop': 1300px,
+	'lg-desktop': 1500px,
 );
 
 @function breakpoint($name) {
 	@return map-get($breakpoints, $name);
 }
 
-@function above-breakpoint($name) {
-	$breakpoint: breakpoint($name);
-	@return '(min-width: #{$breakpoint})';
-}
-
-@function below-breakpoint($name) {
-	$breakpoint: breakpoint($name);
-	@return '(max-width: #{($breakpoint - 1)})';
-}
-
-@function between-breakpoints($name1, $name2) {
-	$breakpoint1: breakpoint($name1);
-	$breakpoint2: breakpoint($name2);
-	@return '(min-width: #{min($breakpoint1, $breakpoint2)}) and (max-width: #{max($breakpoint1, $breakpoint2) - 1})';
+@mixin respond-to($breakpoint) {
+	@media (min-width: map-get($breakpoints, $breakpoint)) {
+		@content;
+	}
 }
