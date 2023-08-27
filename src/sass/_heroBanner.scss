@@ -1,7 +1,8 @@
 @use './helper-fontSizes' as fontSizes;
 
 .hero-banner {
-	@include flexFunc(row, center, null);
+	// @include flexFunc(row, center, null);
+	@include flexFunc(row, space-between, null);
 	height: 90vh;
 
 	@include fontLato;
