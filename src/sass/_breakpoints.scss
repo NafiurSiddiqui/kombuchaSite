@@ -252,6 +252,22 @@
 			@include fontSizes.xl;
 		}
 	}
+	@include breakpoint.respond-to(lg-desktop) {
+		&-header {
+			@include fontSizes.xl5;
+		}
+
+		&-paragraph {
+			@include fontSizes.xl2;
+			width: 36rem;
+		}
+		&-icons {
+			@include flexFunc(column, center, center);
+			&-wrapper {
+				width: 80%;
+			}
+		}
+	}
 }
 
 // .product-showcase {

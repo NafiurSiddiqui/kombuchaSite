@@ -58,8 +58,8 @@
 
 	&-icons {
 		&-wrapper {
-			@include flexFunc(column, center, center);
-			justify-content: space-between;
+			@include flexFunc(column, space-between, center);
+			margin: 2rem 0;
 			padding: 1rem;
 		}
 		&-container {
