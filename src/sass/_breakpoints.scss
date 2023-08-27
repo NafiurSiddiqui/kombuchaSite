@@ -1,6 +1,14 @@
 @use './helper-fontSizes' as fontSizes;
 @use './helper-breakpoints.scss' as breakpoint;
 
+.container {
+	@include flexFunc(row, center, center);
+
+	div.container-wrapper {
+		width: 80%;
+	}
+}
+
 .hero-banner {
 	@include breakpoint.respond-to(lg-mobile) {
 		&-img {
@@ -162,12 +170,6 @@
 	}
 
 	@include breakpoint.respond-to(lg-desktop) {
-		main.container {
-			@include flexFunc(row, center, center);
-		}
-		div.container-wrapper {
-			width: 80%;
-		}
 		&-content {
 			width: 48vw;
 			padding: 0;
@@ -220,7 +222,6 @@
 		}
 
 		&-paragraph {
-			// @include borderTest;
 			width: 28rem;
 		}
 	}
@@ -234,8 +235,21 @@
 	}
 
 	@include breakpoint.respond-to(lg-tablet-XL) {
+		&-header {
+			@include fontSizes.xl4;
+			// font-size: 3rem;
+		}
+		&-icons-wrapper {
+			flex-direction: row;
+		}
 		&-paragraph {
 			@include fontSizes.lg;
+		}
+	}
+
+	@include breakpoint.respond-to(sm-desktop) {
+		&-paragraph {
+			@include fontSizes.xl;
 		}
 	}
 }
