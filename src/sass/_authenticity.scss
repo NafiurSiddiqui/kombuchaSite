@@ -42,7 +42,6 @@
 	margin-top: 6rem;
 
 	&-header-container {
-		@include borderTest;
 		@include flexFunc(column, center, center);
 	}
 
@@ -53,7 +52,6 @@
 	&-paragraph {
 		padding: 1.2rem 0;
 		@include fontSizes.lg;
-		@include borderTest;
 	}
 
 	&-icons {
