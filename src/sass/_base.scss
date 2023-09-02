@@ -19,10 +19,15 @@ body {
 	overflow-x: hidden;
 }
 
+.container {
+	@include flexFunc(row, center, center);
+}
+
 main,
 div.container-wrapper {
 	overflow: hidden;
 }
+
 //universal links reset
 a {
 	text-decoration: none;

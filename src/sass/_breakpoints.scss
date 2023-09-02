@@ -2,10 +2,10 @@
 @use './helper-breakpoints.scss' as breakpoint;
 
 .container {
-	@include flexFunc(row, center, center);
-
-	div.container-wrapper {
-		width: 80%;
+	@include breakpoint.respond-to(lg-desktop) {
+		div.container-wrapper {
+			width: 80%;
+		}
 	}
 }
 
@@ -241,6 +241,7 @@
 		}
 		&-icons-wrapper {
 			flex-direction: row;
+			align-items: flex-end;
 		}
 		&-paragraph {
 			@include fontSizes.lg;
