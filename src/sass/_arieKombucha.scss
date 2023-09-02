@@ -8,11 +8,11 @@
 	&-wrapper {
 		// @include borderTest;
 	}
-	&-header {
-		margin-bottom: 1em;
-	}
+	// &-header {
+	// 	margin-bottom: 1em;
+	// }
 
-	> p {
-		@include fontSizes.lg;
-	}
+	// > p {
+	// 	@include fontSizes.lg;
+	// }
 }
