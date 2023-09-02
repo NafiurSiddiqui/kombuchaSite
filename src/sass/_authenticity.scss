@@ -64,7 +64,9 @@
 			width: 80%;
 			@include flexFunc(column, center, center);
 			padding: 1.5rem 0;
-			// @include borderTest;
+			margin: 1rem 0;
+
+			@include borderTest;
 		}
 		margin-bottom: 1rem;
 	}
