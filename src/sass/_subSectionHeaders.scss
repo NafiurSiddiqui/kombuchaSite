@@ -1,0 +1,14 @@
+@use './helper-fontSizes' as fontSizes;
+
+.sub-section {
+	&-header-container {
+		@include borderTest;
+		@include flexFunc(column, center, center);
+	}
+
+	&-paragraph {
+		@include borderTest;
+		padding: 1.2rem 0;
+		@include fontSizes.lg;
+	}
+}

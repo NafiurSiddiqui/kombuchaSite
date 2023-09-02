@@ -1,12 +1,12 @@
 @use './helper-fontSizes' as fontSizes;
 
 .arie-kombucha {
-	@include borderTest;
+	// @include borderTest;
 	text-align: center;
 	padding: 1rem;
 
 	&-wrapper {
-		@include borderTest;
+		// @include borderTest;
 	}
 	&-header {
 		margin-bottom: 1em;

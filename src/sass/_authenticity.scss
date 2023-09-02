@@ -42,16 +42,21 @@
 	margin-top: 6rem;
 
 	&-header-container {
-		@include flexFunc(column, center, center);
+		// @include flexFunc(column, center, center);
+		// @include borderTest;
 	}
 
 	&-info-wrapper {
 		margin-top: 6rem;
 	}
 
+	// should be common with
+	//ArieKombucha
+	//ArieKombuch - product description?
 	&-paragraph {
-		padding: 1.2rem 0;
-		@include fontSizes.lg;
+		// padding: 1.2rem 0;
+		// @include fontSizes.lg;
+		// @include borderTest;
 	}
 
 	&-icons {
@@ -66,7 +71,7 @@
 			padding: 1.5rem 0;
 			margin: 1rem 0;
 
-			@include borderTest;
+			// @include borderTest;
 		}
 		margin-bottom: 1rem;
 	}

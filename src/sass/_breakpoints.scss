@@ -211,6 +211,42 @@
 	}
 }
 
+.sub-section {
+	@include breakpoint.respond-to(lg-mobile) {
+		&-paragraph {
+			width: 28rem;
+		}
+	}
+
+	@include breakpoint.respond-to(lg-tablet-XL) {
+		&-header {
+			@include fontSizes.xl4;
+			// font-size: 3rem;
+		}
+
+		&-paragraph {
+			@include fontSizes.lg;
+		}
+	}
+
+	@include breakpoint.respond-to(sm-desktop) {
+		&-paragraph {
+			@include fontSizes.xl;
+		}
+	}
+
+	@include breakpoint.respond-to(lg-desktop) {
+		&-header {
+			@include fontSizes.xl5;
+		}
+
+		&-paragraph {
+			@include fontSizes.xl2;
+			width: 36rem;
+		}
+	}
+}
+
 .authenticity {
 	@include breakpoint.respond-to(lg-mobile) {
 		&-big-corps__image-container > img {
@@ -221,9 +257,9 @@
 			padding: 0 3rem;
 		}
 
-		&-paragraph {
-			width: 28rem;
-		}
+		// &-paragraph {
+		// 	width: 28rem;
+		// }
 	}
 
 	@include breakpoint.respond-to(sm-tablet) {
@@ -235,33 +271,20 @@
 	}
 
 	@include breakpoint.respond-to(lg-tablet-XL) {
-		&-header {
-			@include fontSizes.xl4;
-			// font-size: 3rem;
-		}
+		// &-header {
+		// 	@include fontSizes.xl4;
+		// 	// font-size: 3rem;
+		// }
 		&-icons-wrapper {
 			flex-direction: row;
 			align-items: flex-end;
 		}
-		&-paragraph {
-			@include fontSizes.lg;
-		}
+		// &-paragraph {
+		// 	@include fontSizes.lg;
+		// }
 	}
 
-	@include breakpoint.respond-to(sm-desktop) {
-		&-paragraph {
-			@include fontSizes.xl;
-		}
-	}
 	@include breakpoint.respond-to(lg-desktop) {
-		&-header {
-			@include fontSizes.xl5;
-		}
-
-		&-paragraph {
-			@include fontSizes.xl2;
-			width: 36rem;
-		}
 		&-icons {
 			@include flexFunc(column, center, center);
 			&-wrapper {
