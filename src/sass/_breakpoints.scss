@@ -256,10 +256,6 @@
 		&-info-wrapper {
 			padding: 0 3rem;
 		}
-
-		// &-paragraph {
-		// 	width: 28rem;
-		// }
 	}
 
 	@include breakpoint.respond-to(sm-tablet) {
@@ -271,17 +267,10 @@
 	}
 
 	@include breakpoint.respond-to(lg-tablet-XL) {
-		// &-header {
-		// 	@include fontSizes.xl4;
-		// 	// font-size: 3rem;
-		// }
 		&-icons-wrapper {
 			flex-direction: row;
 			align-items: flex-end;
 		}
-		// &-paragraph {
-		// 	@include fontSizes.lg;
-		// }
 	}
 
 	@include breakpoint.respond-to(lg-desktop) {
