@@ -5,6 +5,9 @@
 	text-align: center;
 	padding: 1rem;
 
+	&-wrapper {
+		@include borderTest;
+	}
 	&-header {
 		margin-bottom: 1em;
 	}
