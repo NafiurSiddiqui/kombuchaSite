@@ -307,15 +307,12 @@
 		&-description,
 		&__img-container {
 			width: 50%;
-			@include borderTest;
+			// @include borderTest;
 		}
 
 		&-description {
 			@include borderTest;
-
-			&-header {
-				margin-top: 1rem;
-			}
+			padding-right: 0.6rem;
 		}
 
 		&__img-container {
