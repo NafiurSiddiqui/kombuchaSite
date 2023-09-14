@@ -116,15 +116,13 @@
 
 	&-vdo,
 	&-vdo-peach {
-		width: 8rem;
-		height: 8rem;
-		text-align: center;
-		position: relative;
-		top: 3rem;
-		left: -5rem;
-		&-peach {
-			right: -28vw;
+		&-wrapper {
+			width: 100%;
+			position: relative;
+			top: 2rem;
 		}
+		width: 8rem;
+
 		&__play-btn {
 			padding: 3rem;
 			border: 1px dashed $primaryColor;
