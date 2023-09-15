@@ -287,9 +287,9 @@
 	&-section {
 		@include flexFunc(column, center, center);
 	}
-	&-container-wrapper {
-		@include borderTest;
-	}
+	// &-container-wrapper {
+	// 	@include borderTest;
+	// }
 	@include breakpoint.respond-to(lg-mobile) {
 		&-container-wrapper {
 			width: 80vw;
@@ -297,8 +297,7 @@
 	}
 	@include breakpoint.respond-to(sm-tablet) {
 		&-container-wrapper {
-			width: 100vw;
-			// padding: 0 2rem;
+			width: 90vw;
 		}
 		&-container {
 			@include flexFunc(row, space-between, null);
@@ -332,13 +331,55 @@
 		}
 
 		&-description {
-			@include borderTest;
-			padding-right: 0.6rem;
+			// padding-right: 0.6rem;
 		}
 
 		&__img-container {
 			height: auto;
 			margin-top: 0;
+		}
+
+		&-description {
+			&-paragraph__wrapper {
+				// @include borderTest;
+				@include flexFunc(row, center, null);
+			}
+			&-paragraph {
+				width: 80%;
+			}
+		}
+	}
+
+	@include breakpoint.respond-to(sm-desktop) {
+		.arie-kombucha-paragraph .sub-section-paragraph {
+			width: 34rem;
+		}
+
+		&-vdo {
+			width: 10rem;
+		}
+
+		&-description {
+			@include borderTest;
+			width: 48%;
+
+			&-header {
+				@include fontSizes.xl2;
+			}
+
+			&-paragraph {
+				@include fontSizes.xl;
+			}
+
+			&__btn-container {
+				margin-top: 1.6rem;
+			}
+		}
+	}
+
+	@include breakpoint.respond-to(lg-desktop) {
+		&-container-wrapper {
+			width: 100%;
 		}
 	}
 }
