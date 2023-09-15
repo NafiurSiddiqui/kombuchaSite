@@ -304,6 +304,27 @@
 			@include flexFunc(row, space-between, null);
 		}
 
+		&-img-wrapper {
+			width: 10rem;
+		}
+
+		&-container:nth-child(2) {
+			.product-showcase-description {
+				order: 2;
+			}
+			.product-showcase__img-container {
+				order: 1;
+			}
+
+			.product-showcase-vdo-wrapper {
+				@include flexFunc(row, flex-end, null);
+			}
+
+			.product-showcase-vdo-text {
+				right: 6rem;
+			}
+		}
+
 		&-description,
 		&__img-container {
 			width: 50%;
