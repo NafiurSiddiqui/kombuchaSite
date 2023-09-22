@@ -6,6 +6,10 @@
 		@include flexFunc(column, center, center);
 	}
 
+	&-header {
+		@include fontSizes.xl2;
+	}
+
 	&-paragraph {
 		@include borderTest;
 		padding: 1.2rem 0;
